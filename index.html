@@ -1,0 +1,3249 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f0f0f'/%3E%3Ctext x='32' y='50' font-family='Arial Black,sans-serif' font-size='44' font-weight='900' fill='white' text-anchor='middle' letter-spacing='-2'%3EN%3C/text%3E%3Ccircle cx='52' cy='12' r='8' fill='%238B5CF6'/%3E%3C/svg%3E">
+<title>Nexora AI — Автоматизація бізнесу через AI</title>
+
+<meta name="description" content="Автоматизуємо бізнес-процеси середнього бізнесу за 14 днів. AI-асистенти, інтеграції, аналітика і підтримка. Безкоштовний аудит — без зобов'язань.">
+<link rel="canonical" href="https://nexora.ai/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nexora AI — Автоматизація бізнесу через AI">
+<meta property="og:description" content="Автоматизуємо бізнес-процеси середнього бізнесу за 14 днів. AI-асистенти, інтеграції, аналітика і підтримка. Безкоштовний аудит — без зобов'язань.">
+<meta property="og:url" content="https://nexora.ai/">
+<meta property="og:image" content="https://nexora.ai/og-image.jpg">
+<!-- TODO: створи og-image.jpg розміром 1200×630px з логотипом і слоганом, завантаж в корінь сайту -->
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Nexora AI — Автоматизація бізнесу через AI">
+<meta name="twitter:description" content="Автоматизуємо бізнес-процеси середнього бізнесу за 14 днів. AI-асистенти, інтеграції, аналітика.">
+<meta name="twitter:image" content="https://nexora.ai/og-image.jpg">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<!-- TODO: створи apple-touch-icon.png розміром 180×180px і завантаж в корінь сайту -->
+
+<!-- GA4: вставити тег тут -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script> -->
+
+<!-- Meta Pixel: вставити тут -->
+<!-- <script>
+  !function(f,b,e,v,n,t,s){...}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', 'XXXXXXXXXXXXXXXXX');
+  fbq('track', 'PageView');
+</script> -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Bebas+Neue&display=swap" rel="stylesheet">
+<style>
+
+@font-face { font-family: 'TT Firs Neue'; src: url('fonts/TTFirsNeue-Thin.woff2') format('woff2'); font-weight: 100; font-style: normal; font-display: swap; }
+@font-face { font-family: 'TT Firs Neue'; src: url('fonts/TTFirsNeue-Light.woff2') format('woff2'); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: 'TT Firs Neue'; src: url('fonts/TTFirsNeue-Regular.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'TT Firs Neue'; src: url('fonts/TTFirsNeue-Medium.woff2') format('woff2'); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'TT Firs Neue'; src: url('fonts/TTFirsNeue-DemiBold.woff2') format('woff2'); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'TT Firs Neue'; src: url('fonts/TTFirsNeue-Bold.woff2') format('woff2'); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'TT Firs Neue'; src: url('fonts/TTFirsNeue-ExtraBold.woff2') format('woff2'); font-weight: 800; font-style: normal; font-display: swap; }
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+background: #080808;
+color: #e8e4dc;
+font-family: 'DM Sans', sans-serif;
+font-size: 16px;
+line-height: 1.6;
+overflow-x: hidden;
+visibility: hidden;
+}
+body.ready { visibility: visible; }
+
+:root {
+--bg:        #080808;
+--bg2:       #0f0f0f;
+--bg3:       #141414;
+--bg4:       #1a1a1a;
+--border:    rgba(255,255,255,0.07);
+--border2:   rgba(255,255,255,0.12);
+--text:      #e8e4dc;
+--muted:     #a09c96;
+--accent:    #8B5CF6;
+--accent2:   #6D3FD4;
+--white:     #ffffff;
+--font-head: 'TT Firs Neue', sans-serif;
+--font-body: 'DM Sans', sans-serif;
+--font-num:  'Bebas Neue', sans-serif;
+--max:       1200px;
+--gutter:    clamp(20px, 5vw, 80px);
+}
+
+body::before {
+content: '';
+position: fixed; inset: 0;
+background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+pointer-events: none; z-index: 1000; opacity: .45;
+}
+
+.container { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
+
+nav {
+position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+padding: 20px var(--gutter);
+display: flex; align-items: center; justify-content: space-between;
+border-bottom: 1px solid transparent;
+transition: background .4s, border-color .4s, backdrop-filter .4s;
+}
+nav.scrolled {
+background: rgba(8,8,8,.85);
+backdrop-filter: blur(20px);
+border-color: var(--border);
+}
+.nav-logo {
+font-family: var(--font-head);
+font-size: 20px; font-weight: 700;
+color: var(--white); text-decoration: none;
+letter-spacing: -.02em;
+display: flex; align-items: center; gap: 8px;
+}
+.nav-logo-dot {
+width: 8px; height: 8px; border-radius: 50%;
+background: var(--accent);
+display: inline-block;
+}
+.nav-links {
+display: flex; gap: 32px; list-style: none;
+}
+.nav-links a {
+color: var(--muted); text-decoration: none;
+font-size: 14px; font-weight: 400;
+transition: color .2s;
+}
+.nav-links a:hover { color: var(--text); }
+.nav-cta {
+display: inline-flex; align-items: center; gap: 8px;
+padding: 10px 22px; border-radius: 6px;
+font-size: 14px; font-weight: 600;
+text-decoration: none; font-family: var(--font-head);
+white-space: nowrap;
+background: linear-gradient(90deg, #8B5CF6 0%, #a78bfa 45%, #8B5CF6 100%);
+background-size: 220% auto;
+color: #fff;
+border: none; cursor: pointer;
+box-shadow: 0 0 0 rgba(139,92,246,0);
+transition: box-shadow .3s, transform .2s;
+animation: btn-shimmer 3s linear infinite;
+}
+.nav-cta:hover {
+transform: translateY(-2px);
+box-shadow: 0 0 0 1px rgba(139,92,246,.5), 0 8px 24px rgba(139,92,246,.35);
+animation-play-state: paused;
+}
+.nav-burger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+.nav-burger span { display: block; width: 24px; height: 1.5px; background: var(--text); transition: .3s; }
+
+#hero {
+min-height: 100vh;
+display: flex; flex-direction: column; justify-content: flex-end;
+position: relative;
+padding: 0 var(--gutter) 56px;
+}
+.hero-bg {
+position: absolute; inset: 0;
+background: radial-gradient(ellipse 55% 65% at 75% 45%, rgba(139,92,246,.13) 0%, transparent 60%),
+radial-gradient(ellipse 30% 35% at 10% 80%, rgba(80,40,180,.06) 0%, transparent 60%);
+}
+#dither-canvas {
+position: fixed;
+top: 0; left: 0;
+width: 100%; height: 100%;
+opacity: .75;
+pointer-events: none;
+z-index: 0;
+transition: opacity .4s ease;
+}
+.hero-grid-lines {
+position: absolute; inset: 0;
+background-image:
+linear-gradient(rgba(255,255,255,.02) 1px, transparent 1px),
+linear-gradient(90deg, rgba(255,255,255,.02) 1px, transparent 1px);
+background-size: 80px 80px;
+}
+
+.hero-keywords {
+position: absolute;
+top: 50%; transform: translateY(-50%);
+left: var(--gutter); right: var(--gutter);
+display: flex; justify-content: space-between; align-items: center;
+z-index: 2;
+pointer-events: none;
+}
+.hero-keywords span {
+font-size: 13px; letter-spacing: .1em; text-transform: uppercase;
+color: rgba(255,255,255,1); font-family: var(--font-body); font-weight: 400;
+}
+
+.hero-inner {
+position: relative; z-index: 2;
+width: 100%;
+display: flex;
+align-items: flex-end;
+justify-content: flex-start;
+gap: 40px;
+}
+.hero-content { flex: 1; }
+.hero-h1 {
+font-family: var(--font-head);
+font-size: clamp(64px, 9.5vw, 140px);
+font-weight: 500;
+line-height: .95;
+letter-spacing: -.04em;
+color: var(--white);
+margin: 0;
+text-transform: uppercase;
+}
+.hero-h1 em {
+font-style: normal;
+background: linear-gradient(90deg, #8B5CF6 0%, #c084fc 50%, #8B5CF6 100%);
+background-size: 200% auto;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+animation: grad-shift 4s linear infinite;
+}
+@keyframes grad-shift {
+0%   { background-position: 0% center; }
+100% { background-position: 200% center; }
+}
+
+.hero-right {
+display: flex; flex-direction: column; align-items: flex-start;
+gap: 24px; max-width: 300px; width: 300px; flex-shrink: 0; padding-bottom: 0; margin-top: auto; align-self: flex-end;
+}
+.hero-actions .btn-primary { width: 100%; justify-content: space-between; }
+.hero-sub {
+font-size: 14px; color: var(--white); line-height: 1.75; font-weight: 300;
+}
+.hero-sub strong { color: var(--white); font-weight: 300; }
+.hero-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+.hero-note { font-size: 11px; color: rgba(255,255,255,.3); letter-spacing: .01em; }
+
+@keyframes btn-shimmer {
+0%   { background-position: 0% center; }
+100% { background-position: 220% center; }
+}
+
+.btn-primary {
+display: inline-flex; align-items: center; gap: 10px;
+position: relative; overflow: hidden;
+background: linear-gradient(90deg, #8B5CF6 0%, #a78bfa 45%, #8B5CF6 100%);
+background-size: 220% auto;
+color: #fff;
+padding: 14px 28px; border-radius: 8px;
+font-family: var(--font-head); font-size: 15px; font-weight: 600;
+text-decoration: none; white-space: nowrap;
+border: none; cursor: pointer;
+box-shadow: 0 0 0 1px rgba(139,92,246,0), 0 4px 16px rgba(139,92,246,.2);
+transition: box-shadow .3s, transform .2s;
+animation: btn-shimmer 3.5s linear infinite;
+}
+
+.btn-primary::before {
+content: '';
+position: absolute; inset: 0;
+background: linear-gradient(105deg, transparent 35%, rgba(255,255,255,.18) 50%, transparent 65%);
+background-size: 200% 100%;
+background-position: -200% 0;
+transition: background-position .5s ease;
+border-radius: inherit;
+pointer-events: none;
+}
+.btn-primary:hover::before { background-position: 200% 0; }
+.btn-primary:hover {
+transform: translateY(-2px);
+box-shadow: 0 0 0 1px rgba(139,92,246,.55), 0 8px 28px rgba(139,92,246,.4);
+animation-play-state: paused;
+}
+.btn-primary:active { transform: translateY(0); }
+.btn-primary svg { transition: transform .25s cubic-bezier(.34,1.56,.64,1); flex-shrink: 0; }
+.btn-primary:hover svg { transform: translateX(5px); }
+.hero-scroll {
+position: absolute; bottom: 56px; left: 50%; transform: translateX(-50%);
+display: flex; flex-direction: column; align-items: center; gap: 8px;
+color: var(--muted); font-size: 11px; letter-spacing: .1em; text-transform: uppercase;
+z-index: 2; opacity: .4;
+}
+.hero-scroll-line { width: 1px; height: 40px; background: linear-gradient(to bottom, var(--accent), transparent); animation: scrolldown 1.8s infinite; }
+@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.5;transform:scale(1.4)} }
+@keyframes scrolldown { 0%{transform:scaleY(0);transform-origin:top} 50%{transform:scaleY(1);transform-origin:top} 51%{transform:scaleY(1);transform-origin:bottom} 100%{transform:scaleY(0);transform-origin:bottom} }
+@media (max-width: 700px) {
+#hero { padding-bottom: 48px; }
+.hero-inner { flex-direction: column; align-items: flex-start; gap: 28px; }
+.hero-h1 { font-size: clamp(52px, 14vw, 90px); }
+.hero-right { max-width: 100%; width: 100%; align-self: flex-start; align-items: flex-start; }
+.hero-actions { width: 100%; align-items: flex-start; }
+.hero-actions .btn-primary { width: auto; justify-content: flex-start; }
+.hero-keywords span:nth-child(2) { display: none; }
+}
+
+section { padding: clamp(80px, 10vw, 140px) var(--gutter); }
+.section-label {
+font-size: 11px; letter-spacing: .12em; text-transform: uppercase;
+color: var(--accent); font-weight: 500; margin-bottom: 20px;
+display: flex; align-items: center; gap: 10px;
+}
+.section-label::before { content:''; display:block; width:24px; height:1px; background:var(--accent); }
+.section-h2 {
+font-family: var(--font-head);
+font-size: clamp(36px, 5vw, 64px);
+font-weight: 500; line-height: 1.0;
+letter-spacing: -.03em;
+color: var(--white); margin-bottom: 24px;
+}
+.section-sub { font-size: 16px; color: var(--muted); max-width: 520px; line-height: 1.7; font-weight: 300; }
+
+#pain {
+background: transparent;
+position: relative;
+z-index: 1;
+padding: 0;
+}
+.pain-stats {
+position: relative;
+z-index: 1;
+padding: clamp(56px, 8vh, 100px) var(--gutter);
+border-top: 1px solid rgba(255,255,255,.08);
+}
+.pain-stats-inner {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 2px;
+margin-bottom: 32px;
+}
+.pain-stat {
+padding: clamp(16px, 2vw, 28px) 0;
+border-right: 1px solid rgba(255,255,255,.08);
+padding-right: clamp(24px, 3vw, 48px);
+}
+.pain-stat:last-child { border-right: none; padding-right: 0; }
+.pain-stat + .pain-stat { padding-left: clamp(24px, 3vw, 48px); }
+.pain-stat-num {
+font-family: var(--font-num);
+font-size: clamp(52px, 8vw, 120px);
+font-weight: 400;
+line-height: 1;
+color: var(--white);
+letter-spacing: -.02em;
+margin-bottom: 16px;
+}
+.pain-stat-num span {
+font-size: clamp(28px, 4vw, 56px);
+color: var(--accent);
+margin-left: 4px;
+}
+.pain-stat-desc {
+font-size: clamp(13px, 1.2vw, 16px);
+color: rgba(255,255,255,1);
+line-height: 1.55;
+font-weight: 300;
+max-width: 240px;
+}
+.pain-stats-note {
+font-size: 13px;
+color: rgba(255,255,255,.25);
+line-height: 1.6;
+padding-top: 24px;
+border-top: 1px solid rgba(255,255,255,.06);
+}
+@media (max-width: 700px) {
+.pain-stats-inner { grid-template-columns: 1fr; }
+.pain-stat { border-right: none; border-bottom: 1px solid rgba(255,255,255,.08); padding-left: 0 !important; padding-right: 0 !important; }
+.pain-stat:last-child { border-bottom: none; }
+}
+.pain-sticky {
+padding-top: clamp(120px, 18vh, 180px);
+padding-bottom: clamp(40px, 5vh, 64px);
+display: flex;
+align-items: flex-start;
+
+min-height: calc(clamp(120px, 18vh, 180px) + 5 * (clamp(24px, 4.2vw, 68px) * 1.2) + clamp(40px, 5vh, 64px) + clamp(20px, 3vw, 40px));
+height: calc(clamp(120px, 18vh, 180px) + 5 * (clamp(24px, 4.2vw, 68px) * 1.2) + clamp(40px, 5vh, 64px) + clamp(20px, 3vw, 40px));
+}
+.pain-lines {
+width: 100%;
+
+padding: 0 var(--gutter);
+box-sizing: border-box;
+}
+.pain-line {
+display: block;
+font-family: var(--font-head);
+font-size: clamp(24px, 4.2vw, 68px);
+font-weight: 500;
+line-height: 1.2;
+letter-spacing: -.03em;
+color: rgba(255,255,255,1);
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.pain-line-last {
+color: rgba(255,255,255,1) !important;
+margin-top: clamp(20px, 3vw, 40px);
+padding-top: clamp(20px, 3vw, 40px);
+border-top: 1px solid rgba(255,255,255,.08);
+}
+.pain-line-last span {
+color: var(--accent);
+}
+.pain-line-last.active,
+.pain-line-last.past {
+color: var(--white) !important;
+}
+@media (max-width: 700px) {
+.pain-line { font-size: clamp(22px, 6vw, 36px); white-space: normal; }
+}
+
+.pain-cursor {
+display: inline-block;
+width: 3px;
+height: .85em;
+background: var(--white);
+margin-left: 4px;
+vertical-align: middle;
+animation: cursor-blink .5s ease-in-out infinite alternate;
+}
+.pain-cursor.hidden { opacity: 0; }
+@keyframes cursor-blink {
+from { opacity: 1; }
+to   { opacity: 0; }
+}
+
+#photo-strip {
+padding: 0;
+overflow: hidden;
+height: clamp(280px, 35vw, 480px);
+position: relative;
+}
+.photo-strip-inner {
+display: grid;
+grid-template-columns: 2fr 1fr 1fr;
+height: 100%;
+gap: 2px;
+}
+.photo-strip-img {
+overflow: hidden;
+position: relative;
+}
+.photo-strip-img img {
+width: 100%; height: 100%;
+object-fit: cover;
+display: block;
+filter: brightness(.55) saturate(.7);
+transition: filter .5s, transform .6s;
+}
+.photo-strip-img:hover img { filter: brightness(.7) saturate(.85); transform: scale(1.03); }
+.photo-strip-img .overlay-label {
+position: absolute; bottom: 20px; left: 20px;
+font-size: 11px; letter-spacing: .1em; text-transform: uppercase;
+color: rgba(255,255,255,.45); font-family: var(--font-head); font-weight: 600;
+}
+@media (max-width: 700px) {
+.photo-strip-inner { grid-template-columns: 1fr 1fr; }
+.photo-strip-img:last-child { display: none; }
+#photo-strip { height: clamp(180px, 50vw, 300px); }
+}
+
+#services { background: var(--bg); overflow: visible; padding: 0; position: relative; z-index: 1; }
+#services .inner { max-width: var(--max); margin: 0 auto; }
+#services .head { margin-bottom: 0; }
+
+.svc-pin-height {
+height: 280vh;
+position: relative;
+background: var(--bg);
+}
+.svc-pin-container {
+height: 100vh;
+width: 100%;
+max-width: var(--max);
+margin: 0 auto;
+padding: 0 var(--gutter);
+position: relative;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: stretch;
+overflow: hidden;
+box-sizing: border-box;
+background: var(--bg);
+}
+.svc-pin-head {
+padding: 0;
+flex-shrink: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+height: 50vh;
+}
+.svc-pin-head .section-h2 {
+font-size: clamp(42px, 6vw, 80px);
+margin-bottom: 0;
+text-align: center;
+}
+.svc-split-heading .svc-letter-wrap {
+display: inline-block;
+overflow: hidden;
+vertical-align: bottom;
+}
+.svc-split-heading .svc-letter {
+display: inline-block;
+transform: translateY(110%);
+will-change: transform;
+}
+.svc-split-heading .svc-letter-space {
+display: inline-block;
+width: 0.3em;
+}
+.svc-pin-cards-row {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 16px;
+flex: 1;
+min-height: 0;
+}
+
+.svc-pin-card {
+width: calc(25% - 12px);
+flex-shrink: 0;
+min-height: 420px;
+background: #111113;
+border-radius: 20px;
+padding: 44px 32px 48px;
+position: relative; overflow: hidden;
+display: flex; flex-direction: column;
+will-change: transform;
+cursor: default;
+border: 1px solid rgba(255,255,255,.06);
+transform: translateY(70vh) rotate(12deg);
+}
+.svc-pin-card::before {
+content: '';
+position: absolute; inset: 0;
+background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(139,92,246,.07) 0%, transparent 70%);
+pointer-events: none;
+}
+
+.service-icon {
+width: 64px; height: 64px; border-radius: 0;
+background: transparent; border: none;
+display: flex; align-items: flex-start; justify-content: flex-start;
+margin-bottom: auto;
+flex-shrink: 0;
+}
+.service-icon svg { width: 56px; height: 56px; }
+
+.service-text { margin-top: 40px; }
+.service-name {
+font-family: var(--font-head);
+font-size: clamp(20px, 2vw, 28px);
+font-weight: 600;
+color: #fff;
+letter-spacing: -.03em;
+margin-bottom: 16px;
+line-height: 1.1;
+}
+.service-desc {
+font-size: 14px; color: rgba(255,255,255,.45);
+line-height: 1.8; font-weight: 300;
+}
+.service-tools { margin-top: 28px; display: flex; gap: 6px; flex-wrap: wrap; }
+.tool-tag {
+font-size: 11px; color: rgba(255,255,255,.35);
+border: 1px solid rgba(255,255,255,.1); border-radius: 4px;
+padding: 4px 10px;
+background: rgba(255,255,255,.03);
+}
+
+.svc-mobile-head { display: none; }
+@media (max-width: 700px) {
+#services .head { padding: 80px 20px 32px; }
+.svc-pin-height { height: auto; display: none; }
+.svc-mobile-head { display: block; padding: 80px 20px 32px; }
+.svc-mobile-slider { display: block; padding: 0 0 80px; }
+.svc-mobile-track {
+display: flex;
+overflow-x: auto;
+scroll-snap-type: x mandatory;
+-webkit-overflow-scrolling: touch;
+scrollbar-width: none;
+gap: 12px;
+padding: 0 20px 4px;
+}
+.svc-mobile-track::-webkit-scrollbar { display: none; }
+.svc-mobile-slide {
+flex: 0 0 85vw;
+scroll-snap-align: start;
+background: #111113;
+border-radius: 16px;
+padding: 36px 28px 40px;
+display: flex; flex-direction: column;
+min-height: 320px;
+border: 1px solid rgba(255,255,255,.06);
+position: relative; overflow: hidden;
+}
+.svc-mobile-slide::before {
+content: '';
+position: absolute; inset: 0;
+background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(139,92,246,.07) 0%, transparent 70%);
+pointer-events: none;
+}
+.svc-slider-dots {
+display: flex; gap: 8px; justify-content: center;
+margin-top: 20px; padding: 0 20px;
+}
+.svc-dot {
+width: 6px; height: 6px; border-radius: 50%;
+background: rgba(255,255,255,.2); border: none; cursor: pointer;
+padding: 0; transition: background .2s, width .2s;
+}
+.svc-dot.active {
+background: var(--accent); width: 20px; border-radius: 3px;
+}
+}
+@media (min-width: 701px) {
+.svc-mobile-slider { display: none; }
+}
+
+.process-photo {
+margin-top: 72px;
+position: relative; border-radius: 16px; overflow: hidden;
+height: clamp(220px, 28vw, 380px);
+}
+.process-photo img {
+width: 100%; height: 100%; object-fit: cover;
+filter: brightness(.4) saturate(.5);
+}
+.process-photo-overlay {
+position: absolute; inset: 0;
+display: flex; align-items: center; justify-content: center;
+flex-direction: column; gap: 8px; text-align: center;
+background: linear-gradient(135deg, rgba(139,92,246,.08) 0%, transparent 60%);
+}
+.process-photo-num {
+font-family: var(--font-num);
+font-size: clamp(80px, 12vw, 140px);
+color: rgba(255,255,255,.06);
+line-height: 1; letter-spacing: .02em;
+}
+.process-photo-text {
+font-family: var(--font-head); font-size: clamp(16px, 2vw, 22px);
+font-weight: 700; color: rgba(255,255,255,.65);
+letter-spacing: -.02em;
+}
+
+#stats {
+position: relative; z-index: 1;
+background: var(--bg);
+border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+padding: clamp(60px, 8vw, 100px) var(--gutter);
+}
+#stats .inner { max-width: var(--max); margin: 0 auto; }
+.stats-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; }
+.stat-item {
+padding: 48px 40px; text-align: left;
+border-right: 1px solid var(--border);
+position: relative;
+}
+.stat-item:last-child { border-right: none; }
+.stat-num {
+font-family: var(--font-num);
+font-size: clamp(56px, 7vw, 96px);
+font-weight: 400; line-height: 1;
+letter-spacing: .01em;
+color: var(--white); margin-bottom: 12px;
+}
+.stat-num span { color: var(--accent); }
+.stat-desc { font-size: 14px; color: var(--muted); line-height: 1.55; max-width: 200px; }
+.stats-note { margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--border); font-size: 13px; color: var(--muted); line-height: 1.6; }
+
+#cases {
+background: var(--bg);
+padding: clamp(80px, 12vw, 160px) var(--gutter);
+position: relative;
+z-index: 1;
+}
+.cases-inner {
+margin: 0 auto;
+padding: 0;
+}
+.cases-line {
+display: block;
+border-top: 1px solid rgba(255,255,255,.1);
+padding: clamp(24px, 4vw, 48px) 0;
+cursor: pointer;
+position: relative;
+
+opacity: 0;
+transition: opacity .9s cubic-bezier(.16,1,.3,1);
+}
+.cases-line:last-child {
+border-bottom: 1px solid rgba(255,255,255,.1);
+}
+.cases-line.revealed { opacity: 1; }
+
+.cases-line-text {
+font-family: var(--font-head);
+font-size: clamp(36px, 7vw, 100px);
+font-weight: 500;
+line-height: 1.05;
+letter-spacing: -.04em;
+color: var(--white);
+text-transform: none;
+margin: 0;
+transition: transform .7s cubic-bezier(.16,1,.3,1), color .3s;
+will-change: transform;
+}
+
+.cases-line:nth-child(1) .cases-line-text { text-align: left;   transform: translateX(-60px); }
+.cases-line:nth-child(2) .cases-line-text { text-align: center; transform: translateY(40px); }
+.cases-line:nth-child(3) .cases-line-text { text-align: right;  transform: translateX(60px); }
+.cases-line.revealed .cases-line-text { transform: translate(0, 0); }
+
+.cases-line:hover .cases-line-text { color: #c4a8ff; }
+.cases-line:nth-child(1):hover .cases-line-text { transform: translateX(16px); }
+.cases-line:nth-child(2):hover .cases-line-text { transform: translateY(-4px); }
+.cases-line:nth-child(3):hover .cases-line-text { transform: translateX(-16px); }
+
+.cases-line-arrow {
+display: none;
+}
+.cases-line-meta {
+display: flex; gap: 24px; align-items: center;
+margin-top: 8px;
+opacity: 0;
+transform: translateY(12px);
+transition: opacity .7s cubic-bezier(.16,1,.3,1) .15s, transform .7s cubic-bezier(.16,1,.3,1) .15s;
+}
+.cases-line.revealed .cases-line-meta { opacity: 1; transform: translateY(0); }
+.cases-line:nth-child(2) .cases-line-meta { justify-content: center; }
+.cases-line:nth-child(3) .cases-line-meta { justify-content: flex-end; }
+.cases-line-tag {
+font-size: 11px; letter-spacing: .08em; text-transform: uppercase;
+color: var(--muted); font-weight: 400;
+}
+.cases-line-result {
+font-family: var(--font-num);
+font-size: clamp(18px, 2vw, 26px);
+color: var(--accent);
+letter-spacing: .01em;
+line-height: 1;
+}
+@media (max-width: 700px) {
+.cases-line-text { font-size: clamp(28px, 8vw, 48px); }
+.cases-line:nth-child(1) .cases-line-text,
+.cases-line:nth-child(2) .cases-line-text,
+.cases-line:nth-child(3) .cases-line-text { text-align: left; transform: translateX(-32px); }
+.cases-line.revealed .cases-line-text { transform: translateX(0); }
+.cases-line:nth-child(1):hover .cases-line-text,
+.cases-line:nth-child(2):hover .cases-line-text,
+.cases-line:nth-child(3):hover .cases-line-text { transform: translateX(8px); }
+.cases-line:nth-child(2) .cases-line-meta,
+.cases-line:nth-child(3) .cases-line-meta { justify-content: flex-start; }
+.cases-line-arrow { display: none; }
+}
+
+.case-popup-overlay {
+position: fixed; inset: 0; z-index: 200;
+background: rgba(0,0,0,.7);
+backdrop-filter: blur(12px);
+opacity: 0; visibility: hidden;
+transition: opacity .35s, visibility .35s;
+display: flex; align-items: center; justify-content: center;
+padding: 24px;
+}
+.case-popup-overlay.open {
+opacity: 1; visibility: visible;
+}
+.case-popup {
+background: var(--bg2);
+border: 1px solid var(--border2);
+border-radius: 20px;
+max-width: 840px; width: 100%;
+max-height: 85vh;
+overflow-y: auto;
+padding: clamp(32px, 5vw, 56px);
+position: relative;
+transform: translateY(24px) scale(.97);
+transition: transform .4s cubic-bezier(.16,1,.3,1);
+}
+.case-popup-overlay.open .case-popup {
+transform: translateY(0) scale(1);
+}
+.case-popup::-webkit-scrollbar { width: 4px; }
+.case-popup::-webkit-scrollbar-track { background: transparent; }
+.case-popup::-webkit-scrollbar-thumb { background: rgba(255,255,255,.1); border-radius: 2px; }
+.case-popup-close {
+position: absolute; top: 20px; right: 20px;
+width: 36px; height: 36px; border-radius: 50%;
+background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1);
+cursor: pointer; display: flex; align-items: center; justify-content: center;
+color: var(--muted); font-size: 18px;
+transition: background .2s, color .2s;
+}
+.case-popup-close:hover { background: rgba(255,255,255,.12); color: var(--white); }
+.case-popup-header {
+display: flex; align-items: flex-end; justify-content: space-between;
+padding-bottom: 20px;
+border-bottom: 1px solid var(--border);
+margin-bottom: 32px;
+gap: 16px;
+}
+.case-popup-title {
+font-family: var(--font-head);
+font-size: clamp(22px, 3vw, 32px);
+font-weight: 500; line-height: 1.1;
+letter-spacing: -.03em; color: var(--white);
+}
+.case-popup-num {
+font-family: var(--font-num);
+font-size: clamp(48px, 6vw, 72px);
+line-height: 1; color: rgba(255,255,255,.06);
+flex-shrink: 0;
+}
+.case-popup-grid {
+display: grid;
+grid-template-columns: 160px 1fr 1fr 1fr;
+gap: 24px;
+align-items: start;
+}
+.case-popup-label-col {
+display: flex; flex-direction: column; gap: 20px;
+}
+.case-popup-tag {
+display: inline-flex;
+font-size: 10px; letter-spacing: .1em; text-transform: uppercase;
+color: var(--accent); font-weight: 600;
+background: rgba(139,92,246,.08); border: 1px solid rgba(139,92,246,.2);
+padding: 5px 12px; border-radius: 100px;
+align-self: flex-start;
+}
+.case-popup-result {
+display: flex; flex-direction: column; gap: 4px;
+}
+.case-popup-result-num {
+font-family: var(--font-num);
+font-size: clamp(32px, 4vw, 48px);
+color: var(--accent); line-height: 1;
+}
+.case-popup-result p {
+font-size: 12px; color: var(--muted); line-height: 1.5;
+}
+.case-popup-col {
+display: flex; flex-direction: column; gap: 0;
+border-left: 1px solid var(--border);
+padding-left: 24px;
+}
+.case-popup-col p {
+font-size: 13px; color: rgba(255,255,255,.55); line-height: 1.65; font-weight: 300;
+}
+.case-popup-col p + p {
+margin-top: 8px; padding-top: 8px;
+border-top: 1px solid var(--border);
+color: rgba(255,255,255,.3);
+}
+@media (max-width: 1024px) {
+.case-popup-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 700px) {
+.case-popup-grid { grid-template-columns: 1fr; }
+.case-popup-col { border-left: none; padding-left: 0; border-top: 1px solid var(--border); padding-top: 16px; }
+.case-popup { padding: 28px 20px; }
+}
+
+#process { background: var(--bg); }
+#process .inner { margin: 0 auto; }
+.process-hero {
+display: grid; grid-template-columns: 280px 1fr; gap: 40px;
+align-items: end;
+margin-bottom: clamp(80px, 10vw, 160px);
+}
+.process-hero-left { align-self: end; padding-bottom: 16px; }
+.process-hero-line {
+font-family: var(--font-body); font-size: 15px; font-weight: 300;
+color: var(--muted); line-height: 1.6; margin: 0 0 20px;
+}
+.process-hero-line strong {
+color: var(--white); font-weight: 700;
+}
+.process-heading {
+font-family: var(--font-head);
+font-size: clamp(48px, 7vw, 96px); line-height: 0.95;
+letter-spacing: -.03em; color: var(--white);
+text-align: right; text-transform: uppercase;
+margin: 0; display: flex; flex-direction: column; align-items: flex-end;
+font-weight: 500;
+}
+.ph-line {
+display: block; overflow: hidden;
+}
+.ph-line-inner {
+display: block;
+transform: translateY(110%);
+transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.process-heading.animated .ph-line-inner {
+transform: translateY(0);
+}
+.process-heading.animated .ph-line:nth-child(2) .ph-line-inner { transition-delay: 0.12s; }
+.process-heading.animated .ph-line:nth-child(3) .ph-line-inner { transition-delay: 0.24s; }
+.process-body { display: grid; grid-template-columns: 220px 1fr; gap: 60px; }
+.process-sidebar { position: sticky; top: 120px; align-self: start; }
+.process-rows { display: flex; flex-direction: column; }
+.process-row {
+display: grid; grid-template-columns: 60px 240px 1fr;
+gap: 40px; padding: 36px 0;
+border-top: 1px solid var(--border);
+align-items: baseline;
+position: relative;
+transition: background .4s;
+}
+.process-row:last-child { border-bottom: 1px solid var(--border); }
+
+.process-row::before {
+content: '';
+position: absolute;
+top: -1px; left: 0;
+height: 1px; width: 100%;
+background: rgba(255,255,255,.12);
+transform: scaleX(0);
+transform-origin: left center;
+transition: transform .9s cubic-bezier(.16,1,.3,1);
+}
+.process-row.revealed::before { transform: scaleX(1); }
+.process-row:last-child::after {
+content: '';
+position: absolute;
+bottom: -1px; left: 0;
+height: 1px; width: 100%;
+background: rgba(255,255,255,.12);
+transform: scaleX(0);
+transform-origin: left center;
+transition: transform .9s cubic-bezier(.16,1,.3,1) .3s;
+}
+.process-row:last-child.revealed::after { transform: scaleX(1); }
+
+.process-row-num {
+font-family: var(--font-head); font-size: 14px; font-weight: 700;
+color: var(--muted); letter-spacing: .04em;
+opacity: 0;
+transform: translateX(-24px);
+transition: opacity .7s cubic-bezier(.16,1,.3,1) .1s,
+transform .7s cubic-bezier(.16,1,.3,1) .1s,
+color .3s;
+}
+.process-row.revealed .process-row-num { opacity: 1; transform: translateX(0); }
+
+.process-row-name {
+font-family: var(--font-head); font-size: 16px; font-weight: 700;
+color: var(--white); line-height: 1.4;
+opacity: 0;
+transform: translateY(20px);
+transition: opacity .7s cubic-bezier(.16,1,.3,1) .2s,
+transform .7s cubic-bezier(.16,1,.3,1) .2s;
+}
+.process-row.revealed .process-row-name { opacity: 1; transform: translateY(0); }
+
+.process-row-text {
+font-family: var(--font-body); font-size: 15px; font-weight: 300;
+color: rgba(255,255,255,.5); line-height: 1.7;
+opacity: 0;
+transform: translateY(20px);
+transition: opacity .8s cubic-bezier(.16,1,.3,1) .35s,
+transform .8s cubic-bezier(.16,1,.3,1) .35s,
+color .3s;
+}
+.process-row.revealed .process-row-text { opacity: 1; transform: translateY(0); }
+
+.process-row:hover .process-row-num {
+color: var(--accent);
+}
+.process-row:hover .process-row-text {
+color: rgba(255,255,255,.75);
+}
+
+.process-hero-line {
+font-family: var(--font-body); font-size: 15px; font-weight: 300;
+color: var(--muted); line-height: 1.6; margin: 0 0 20px;
+opacity: 0;
+transform: translateY(16px);
+transition: opacity .8s cubic-bezier(.16,1,.3,1),
+transform .8s cubic-bezier(.16,1,.3,1);
+}
+.process-hero-line:nth-child(2) { transition-delay: .18s; }
+.process-hero.animated .process-hero-line { opacity: 1; transform: translateY(0); }
+
+.process-sidebar-sub {
+font-size: 15px; color: var(--muted); line-height: 1.7; font-weight: 300; margin: 0;
+opacity: 0;
+transform: translateX(-20px);
+transition: opacity .8s cubic-bezier(.16,1,.3,1),
+transform .8s cubic-bezier(.16,1,.3,1);
+}
+.process-sidebar.revealed .process-sidebar-sub { opacity: 1; transform: translateX(0); }
+.process-sidebar .btn-primary {
+opacity: 0;
+transform: translateX(-20px);
+transition: opacity .8s cubic-bezier(.16,1,.3,1) .15s,
+transform .8s cubic-bezier(.16,1,.3,1) .15s;
+}
+.process-sidebar.revealed .btn-primary { opacity: 1; transform: translateX(0); }
+@media (max-width: 900px) {
+.process-hero { grid-template-columns: 1fr; gap: 24px; }
+.process-heading { text-align: left; font-size: clamp(40px, 10vw, 64px); }
+.process-hero-line { margin-left: 0 !important; }
+.process-body { grid-template-columns: 1fr; gap: 40px; }
+.process-sidebar { position: static; }
+.process-row { grid-template-columns: 50px 1fr; gap: 16px; }
+.process-row-text { grid-column: 1 / -1; }
+}
+@media (max-width: 600px) {
+.process-row { grid-template-columns: 1fr; gap: 8px; }
+}
+
+.cta-headline-top .cta-ph-wrap,
+.cta-headline-bottom .cta-ph-wrap {
+display: block;
+overflow: hidden;
+}
+.cta-headline-top .cta-ph-inner,
+.cta-headline-bottom .cta-ph-inner {
+display: block;
+transform: translateY(110%);
+transition: transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+}
+#cta.revealed .cta-headline-top .cta-ph-inner { transform: translateY(0); }
+#cta.revealed .cta-headline-top .cta-ph-wrap:nth-child(2) .cta-ph-inner { transition-delay: 0.1s; }
+#cta.revealed .cta-headline-top .cta-ph-wrap:nth-child(3) .cta-ph-inner { transition-delay: 0.2s; }
+
+#cta.revealed .cta-headline-bottom .cta-ph-inner { transform: translateY(0); }
+#cta.revealed .cta-headline-bottom .cta-ph-wrap:nth-child(2) .cta-ph-inner { transition-delay: 0.1s; }
+#cta.revealed .cta-headline-bottom .cta-ph-wrap:nth-child(3) .cta-ph-inner { transition-delay: 0.2s; }
+
+.cta-center-line,
+.cta-top-note,
+.cta-center-col .btn-primary,
+.cta-small-note {
+opacity: 0;
+transform: translateY(20px);
+transition: opacity 0.7s cubic-bezier(0.16,1,0.3,1),
+transform 0.7s cubic-bezier(0.16,1,0.3,1);
+}
+#cta.revealed .cta-center-line       { opacity: 1; transform: translateY(0); transition-delay: 0.15s; }
+#cta.revealed .cta-top-note          { opacity: 1; transform: translateY(0); transition-delay: 0.3s; }
+#cta.revealed .cta-center-col .btn-primary { opacity: 1; transform: translateY(0); transition-delay: 0.45s; }
+#cta.revealed .cta-small-note        { opacity: 1; transform: translateY(0); transition-delay: 0.58s; }
+
+.cta-aside-left .cta-aside-small,
+.cta-bottom-aside-text {
+opacity: 0;
+transform: translateX(-16px);
+transition: opacity 0.7s cubic-bezier(0.16,1,0.3,1),
+transform 0.7s cubic-bezier(0.16,1,0.3,1);
+}
+#cta.revealed .cta-aside-left .cta-aside-small:nth-child(1) { opacity: 1; transform: translateX(0); transition-delay: 0.35s; }
+#cta.revealed .cta-aside-left .cta-aside-small:nth-child(2) { opacity: 1; transform: translateX(0); transition-delay: 0.5s; }
+#cta.revealed .cta-bottom-aside-text { opacity: 1; transform: translateX(0); transition-delay: 0.4s; }
+
+#cta {
+position: relative;
+overflow: hidden;
+padding: 0 var(--gutter);
+border-top: 1px solid var(--border);
+background: var(--bg);
+min-height: 100vh;
+display: flex;
+align-items: center;
+}
+
+#cta-dots-container {
+position: absolute; inset: 0;
+width: 100%; height: 100%;
+opacity: 0.6;
+pointer-events: none;
+z-index: 1;
+overflow: hidden;
+}
+#cta-dots-container canvas {
+display: block;
+}
+.cta-editorial {
+position: relative; z-index: 2;
+width: 100%;
+display: grid;
+grid-template-columns: 1fr auto 1fr;
+grid-template-rows: auto auto;
+align-items: center;
+gap: 0;
+padding: clamp(48px, 7vh, 80px) 0;
+row-gap: 0;
+}
+
+.cta-top-row {
+grid-column: 1;
+grid-row: 1;
+display: flex;
+align-items: flex-end;
+}
+.cta-headline-top {
+font-family: var(--font-head);
+font-size: clamp(42px, 5.5vw, 80px);
+font-weight: 500;
+line-height: .95;
+letter-spacing: -.04em;
+color: var(--white);
+text-transform: uppercase;
+margin: 0;
+}
+
+.cta-center-col {
+grid-column: 2;
+grid-row: 1 / 3;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 32px;
+padding: 0 clamp(32px, 5vw, 80px);
+}
+.cta-center-line {
+width: 1px;
+height: clamp(60px, 10vh, 120px);
+background: linear-gradient(to bottom, transparent, var(--border2), transparent);
+}
+.cta-small-note {
+font-size: 12px;
+color: rgba(255,255,255,.28);
+text-align: center;
+line-height: 1.6;
+letter-spacing: .01em;
+}
+
+.cta-bottom-row {
+grid-column: 3;
+grid-row: 2;
+display: flex;
+align-items: flex-start;
+justify-content: flex-end;
+}
+.cta-small-bottom {
+display: none;
+}
+.cta-headline-bottom {
+font-family: var(--font-head);
+font-size: clamp(42px, 5.5vw, 80px);
+font-weight: 500;
+line-height: .95;
+letter-spacing: -.04em;
+color: var(--white);
+text-transform: uppercase;
+margin: 0;
+text-align: right;
+}
+.cta-headline-bottom em {
+font-style: normal;
+background: linear-gradient(90deg, #8B5CF6 0%, #c084fc 50%, #8B5CF6 100%);
+background-size: 200% auto;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+animation: grad-shift 4s linear infinite;
+}
+.cta-action-row {
+display: none;
+}
+
+.cta-aside-left {
+grid-column: 1;
+grid-row: 2;
+display: flex;
+flex-direction: column;
+gap: 20px;
+padding-top: clamp(32px, 5vh, 56px);
+align-self: start;
+}
+.cta-aside-small {
+font-size: 13px;
+color: rgba(255,255,255,.28);
+line-height: 1.65;
+font-weight: 300;
+font-family: var(--font-body);
+letter-spacing: .01em;
+}
+.cta-aside-small strong {
+color: rgba(255,255,255,.55);
+font-weight: 500;
+}
+.cta-aside-small-label {
+font-size: 10px;
+letter-spacing: .12em;
+text-transform: uppercase;
+color: rgba(139,92,246,.45);
+font-family: var(--font-body);
+margin-bottom: 6px;
+display: block;
+}
+.cta-top-note {
+font-size: 13px;
+color: rgba(255,255,255,.25);
+font-weight: 300;
+font-family: var(--font-body);
+line-height: 1.6;
+margin-bottom: clamp(20px, 3vh, 32px);
+letter-spacing: .01em;
+text-align: center;
+}
+.cta-bottom-aside {
+grid-column: 3;
+grid-row: 1;
+display: flex;
+align-items: flex-end;
+justify-content: flex-end;
+padding-bottom: clamp(20px, 3vh, 36px);
+}
+.cta-bottom-aside-text {
+font-size: 12px;
+color: rgba(255,255,255,.22);
+font-weight: 300;
+font-family: var(--font-body);
+line-height: 1.7;
+text-align: right;
+letter-spacing: .01em;
+max-width: 200px;
+}
+.cta-bottom-aside-text strong {
+color: rgba(255,255,255,.45);
+font-weight: 500;
+}
+@media (max-width: 700px) {
+.cta-aside-left,
+.cta-bottom-aside { display: none; }
+.cta-top-note { display: none; }
+}
+
+.cta-modal-overlay {
+position: fixed; inset: 0; z-index: 300;
+background: rgba(0,0,0,.75);
+backdrop-filter: blur(16px);
+opacity: 0; visibility: hidden;
+transition: opacity .35s, visibility .35s;
+display: flex; align-items: center; justify-content: center;
+padding: 24px;
+}
+.cta-modal-overlay.open { opacity: 1; visibility: visible; }
+.cta-modal {
+background: var(--bg2);
+border: 1px solid var(--border2);
+border-radius: 20px;
+width: 100%; max-width: 480px;
+padding: clamp(32px, 5vw, 52px);
+position: relative;
+transform: translateY(28px) scale(.97);
+transition: transform .4s cubic-bezier(.16,1,.3,1);
+}
+.cta-modal-overlay.open .cta-modal { transform: translateY(0) scale(1); }
+.cta-modal-close {
+position: absolute; top: 16px; right: 16px;
+width: 34px; height: 34px; border-radius: 50%;
+background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1);
+cursor: pointer; display: flex; align-items: center; justify-content: center;
+color: var(--muted); font-size: 16px;
+transition: background .2s, color .2s;
+}
+.cta-modal-close:hover { background: rgba(255,255,255,.12); color: var(--white); }
+.cta-modal-title {
+font-family: var(--font-head); font-size: 22px; font-weight: 700;
+color: var(--white); margin-bottom: 8px; letter-spacing: -.02em;
+}
+.cta-modal-sub {
+font-size: 13px; color: var(--muted); line-height: 1.6;
+margin-bottom: 28px;
+}
+.cta-form { display: flex; flex-direction: column; gap: 12px; }
+.cta-row { display: grid; grid-template-columns: 1fr; gap: 12px; }
+.cta-input {
+background: var(--bg3); border: 1px solid var(--border2);
+color: var(--text); font-family: var(--font-body); font-size: 15px;
+padding: 16px 20px; border-radius: 8px; outline: none;
+transition: border-color .2s;
+}
+.cta-input::placeholder { color: var(--muted); }
+.cta-input:focus { border-color: var(--accent); }
+.cta-submit {
+
+position: relative; overflow: hidden;
+background: linear-gradient(90deg, #8B5CF6 0%, #a78bfa 45%, #8B5CF6 100%);
+background-size: 220% auto;
+color: #fff;
+border: none; cursor: pointer;
+font-family: var(--font-head); font-size: 15px; font-weight: 600;
+padding: 17px 28px; border-radius: 8px;
+display: flex; align-items: center; justify-content: center; gap: 10px;
+width: 100%; margin-top: 4px;
+box-shadow: 0 0 0 1px rgba(139,92,246,0), 0 4px 16px rgba(139,92,246,.2);
+transition: box-shadow .3s, transform .2s;
+animation: btn-shimmer 3.5s linear infinite;
+}
+.cta-submit::before {
+content: '';
+position: absolute; inset: 0;
+background: linear-gradient(105deg, transparent 35%, rgba(255,255,255,.18) 50%, transparent 65%);
+background-size: 200% 100%;
+background-position: -200% 0;
+transition: background-position .5s ease;
+border-radius: inherit;
+pointer-events: none;
+}
+.cta-submit:hover::before { background-position: 200% 0; }
+.cta-submit:hover {
+transform: translateY(-2px);
+box-shadow: 0 0 0 1px rgba(139,92,246,.55), 0 8px 28px rgba(139,92,246,.4);
+animation-play-state: paused;
+}
+.cta-submit:active { transform: translateY(0); }
+.cta-submit svg { transition: transform .25s cubic-bezier(.34,1.56,.64,1); flex-shrink: 0; }
+.cta-submit:hover svg { transform: translateX(5px); }
+.cta-note { font-size: 12px; color: rgba(255,255,255,.2); margin-top: 12px; text-align: center; }
+
+@media (max-width: 700px) {
+#cta { min-height: auto; padding: 60px var(--gutter); }
+.cta-editorial {
+grid-template-columns: 1fr;
+grid-template-rows: auto auto auto;
+gap: 40px;
+}
+.cta-top-row { grid-column: 1; grid-row: 1; }
+.cta-center-col { grid-column: 1; grid-row: 2; flex-direction: row; padding: 0; }
+.cta-center-line { display: none; }
+.cta-bottom-row { grid-column: 1; grid-row: 3; justify-content: flex-start; }
+.cta-headline-top, .cta-headline-bottom { font-size: clamp(36px, 10vw, 56px); }
+.cta-headline-bottom { text-align: left; }
+}
+
+.cta-bg-overlay { display: none; }
+
+footer {
+background: var(--bg); border-top: 1px solid var(--border);
+padding: clamp(60px, 8vw, 100px) var(--gutter) 40px;
+}
+footer .inner { margin: 0 auto; }
+.footer-top {
+display: grid; grid-template-columns: 1fr 1fr 1fr 1fr;
+gap: 40px; margin-bottom: clamp(60px, 8vw, 100px);
+}
+.footer-col-title {
+font-family: var(--font-head); font-size: 12px; font-weight: 700;
+color: var(--muted); margin-bottom: 24px;
+text-transform: uppercase; letter-spacing: .08em;
+}
+.footer-links { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; }
+.footer-links li a {
+font-family: var(--font-body); font-size: 15px; font-weight: 400;
+color: var(--white); text-decoration: none; transition: color .2s;
+}
+.footer-links li a:hover { color: var(--accent); }
+.footer-brand {
+font-family: var(--font-head); font-weight: 800;
+font-size: clamp(60px, 12vw, 180px); line-height: 0.9;
+letter-spacing: -.04em; color: var(--white);
+text-transform: uppercase; margin-bottom: 40px;
+text-align: center;
+}
+.footer-bottom {
+display: flex; align-items: center; justify-content: space-between;
+flex-wrap: wrap; gap: 16px;
+border-top: 1px solid var(--border); padding-top: 24px;
+}
+.footer-copy { font-size: 13px; color: var(--muted); }
+.footer-legal { display: flex; gap: 24px; flex-wrap: wrap; }
+.footer-legal a {
+font-size: 13px; color: var(--muted); text-decoration: none; transition: color .2s;
+}
+.footer-legal a:hover { color: var(--white); }
+@media (max-width: 700px) {
+.footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
+.footer-bottom { flex-direction: column; align-items: flex-start; }
+}
+@media (max-width: 480px) {
+.footer-top { grid-template-columns: 1fr; }
+}
+
+.fade-up {
+opacity: 0; transform: translateY(32px);
+transition: opacity .7s ease, transform .7s ease;
+}
+.fade-up.visible { opacity: 1; transform: translateY(0); }
+
+.hero-keywords span,
+.hero-h1,
+.hero-sub,
+.hero-actions,
+.hero-note,
+.hero-scroll {
+opacity: 0;
+}
+
+.mobile-menu {
+display: none; position: fixed; inset: 0; z-index: 99;
+background: rgba(8,8,8,.97); backdrop-filter: blur(20px);
+flex-direction: column; align-items: center; justify-content: center; gap: 32px;
+}
+.mobile-menu.open { display: flex; }
+.mobile-menu a { font-family: var(--font-head); font-size: 28px; font-weight: 700; color: var(--text); text-decoration: none; }
+.mobile-menu a:hover { color: var(--accent); }
+.mobile-close { position: absolute; top: 24px; right: var(--gutter); font-size: 28px; color: var(--muted); cursor: pointer; background: none; border: none; }
+
+@media (max-width: 900px) {
+.nav-links { display: none; }
+.nav-cta.desktop { display: none; }
+.nav-burger { display: flex; }
+.pain-grid { grid-template-columns: 1fr; }
+.stats-row { grid-template-columns: 1fr; }
+.stat-item { border-right: none; border-bottom: 1px solid var(--border); }
+.stat-item:last-child { border-bottom: none; }
+.cta-row { grid-template-columns: 1fr; }
+.case-body.open { grid-template-columns: 1fr; }
+.hero-bottom { flex-direction: column; align-items: flex-start; }
+.hero-actions { align-items: flex-start; }
+}
+@media (max-width: 600px) {
+.hero-h1 { font-size: clamp(32px, 10vw, 48px); }
+.case-header { flex-wrap: wrap; }
+.case-meta { flex-direction: column; align-items: flex-start; gap: 8px; }
+.pain-card { padding: 28px 24px; }
+.stat-item { padding: 36px 24px; }
+}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <a href="#" class="nav-logo"><span class="nav-logo-dot"></span>Nexora AI</a>
+  <ul class="nav-links">
+    <li><a href="#pain">Проблема</a></li>
+    <li><a href="#cases">Кейси</a></li>
+    <li><a href="#services">Послуги</a></li>
+    <li><a href="#process">Процес</a></li>
+    
+  </ul>
+  <a href="#" class="nav-cta desktop" onclick="event.preventDefault();openCtaModal()">Отримати аудит</a>
+  <div class="nav-burger" onclick="openMenu()" aria-label="Відкрити меню" role="button" tabindex="0">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" onclick="closeMenu()">✕</button>
+  <a href="#pain" onclick="closeMenu()">Проблема</a>
+  <a href="#cases" onclick="closeMenu()">Кейси</a>
+  <a href="#services" onclick="closeMenu()">Послуги</a>
+  <a href="#process" onclick="closeMenu()">Процес</a>
+  
+  <a href="#" onclick="event.preventDefault();closeMenu();openCtaModal()" style="color:var(--accent)">Отримати аудит →</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <canvas id="dither-canvas"></canvas>
+  <div class="hero-grid-lines"></div>
+
+  
+  <div class="hero-keywords">
+    <span>Автоматизація</span>
+    <span>Ефективність</span>
+    <span>Результат</span>
+  </div>
+
+  
+  <div class="hero-inner">
+    <div class="hero-content">
+      <h1 class="hero-h1">AI повертає<br><em>час та гроші</em></h1>
+    </div>
+    <div class="hero-right">
+      <p class="hero-sub"><strong>До 14 днів</strong> автоматизуємо процеси середнього бізнесу — від збору даних до комунікації з клієнтами.</p>
+      <div class="hero-actions">
+        <a href="#" class="btn-primary" onclick="event.preventDefault();openCtaModal()">
+          Показати де бізнес втрачає
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <span class="hero-note">Безкоштовно · 30 хвилин · Без зобов'язань</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <div class="hero-scroll-line"></div>
+  </div>
+</section>
+
+<!-- PAIN -->
+<section id="pain">
+  <div class="pain-sticky">
+    <div class="pain-lines">
+      <span class="pain-line" id="pl-0"></span>
+      <span class="pain-line" id="pl-1"></span>
+      <span class="pain-line" id="pl-2"></span>
+      <span class="pain-line" id="pl-3"></span>
+      <span class="pain-line pain-line-last" id="pl-4"></span>
+    </div>
+  </div>
+</section>
+
+<!-- PAIN STATS — на тому ж фоні canvas -->
+<section id="pain-stats-section">
+  <div class="pain-stats">
+    <div class="pain-stats-inner">
+      <div class="pain-stat">
+        <div class="pain-stat-num" data-scramble="−40" data-scramble-suffix="год">−40<span>год</span></div>
+        <div class="pain-stat-desc">рутинної роботи на місяць в середньому на команду</div>
+      </div>
+      <div class="pain-stat">
+        <div class="pain-stat-num" data-scramble="14" data-scramble-suffix=" днів">14<span> днів</span></div>
+        <div class="pain-stat-desc">до запуску першої автоматизації з нуля</div>
+      </div>
+      <div class="pain-stat">
+        <div class="pain-stat-num" data-scramble="×3">×3</div>
+        <div class="pain-stat-desc">швидше обробка заявок та звернень клієнтів</div>
+      </div>
+    </div>
+    <div class="pain-stats-note">Середні показники по проектах 2024–2025. Точні цифри — після аудиту вашого бізнесу.</div>
+  </div>
+</section>
+
+<!-- CASES -->
+<section id="cases">
+  <div class="cases-inner">
+    <div class="cases-line" onclick="openCase(0)">
+      <div class="cases-line-text">Ми прибираємо рутину</div>
+      <div class="cases-line-meta">
+        <span class="cases-line-tag">Дистрибуція · 120 осіб</span>
+        <span class="cases-line-result">−90%</span>
+      </div>
+      <div class="cases-line-arrow" aria-hidden="true">
+        <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+    </div>
+
+    <div class="cases-line" onclick="openCase(2)">
+      <div class="cases-line-text">Ми даємо контроль</div>
+      <div class="cases-line-meta">
+        <span class="cases-line-tag">Виробництво · 200 осіб</span>
+        <span class="cases-line-result">Real‑time</span>
+      </div>
+      <div class="cases-line-arrow" aria-hidden="true">
+        <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+    </div>
+
+    <div class="cases-line" onclick="openCase(1)">
+      <div class="cases-line-text">Ми навчаємо AI</div>
+      <div class="cases-line-meta">
+        <span class="cases-line-tag">Сервісний центр · 60 осіб</span>
+        <span class="cases-line-result">73%</span>
+      </div>
+      <div class="cases-line-arrow" aria-hidden="true">
+        <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="case-popup-overlay" id="casePopup0" onclick="closeCaseOutside(event, this)">
+  <div class="case-popup">
+    <button class="case-popup-close" onclick="closeCase(0)">✕</button>
+    <div class="case-popup-header">
+      <div class="case-popup-title">Автоматизація обробки замовлень і сповіщень клієнтів</div>
+      <div class="case-popup-num">01</div>
+    </div>
+    <div class="case-popup-grid">
+      <div class="case-popup-label-col">
+        <div class="case-popup-tag">Дистрибуція · 120 осіб</div>
+        <div class="case-popup-result">
+          <div class="case-popup-result-num">−90%</div>
+          <p>часу на обробку.<br>З 40 хвилин до 4.</p>
+        </div>
+      </div>
+      <div class="case-popup-col">
+        <p>Менеджери вручну передавали дані між 1С, Excel і Telegram-ботом щодня. Кожна помилка — затримка і незадоволений клієнт.</p>
+        <p>Процес займав до 40 хвилин на одне замовлення і повністю залежав від уважності конкретної людини.</p>
+      </div>
+      <div class="case-popup-col">
+        <p>Наскрізна інтеграція через n8n: замовлення надходить → склад отримує задачу → клієнт отримує сповіщення автоматично.</p>
+        <p>Впровадження зайняло 11 днів від першого дзвінка до повного запуску на реальних даних.</p>
+      </div>
+      <div class="case-popup-col">
+        <p>Звільнили 1.5 ставки менеджера для важливіших задач. Кількість помилок при передачі даних — нуль з моменту запуску.</p>
+        <p>Клієнти отримують статус замовлення автоматично — кількість вхідних дзвінків зменшилась на 60%.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="case-popup-overlay" id="casePopup1" onclick="closeCaseOutside(event, this)">
+  <div class="case-popup">
+    <button class="case-popup-close" onclick="closeCase(1)">✕</button>
+    <div class="case-popup-header">
+      <div class="case-popup-title">AI-асистент для першої лінії підтримки клієнтів</div>
+      <div class="case-popup-num">02</div>
+    </div>
+    <div class="case-popup-grid">
+      <div class="case-popup-label-col">
+        <div class="case-popup-tag">Сервісний центр · 60 осіб</div>
+        <div class="case-popup-result">
+          <div class="case-popup-result-num">73%</div>
+          <p>звернень закриває AI<br>без участі людини.</p>
+        </div>
+      </div>
+      <div class="case-popup-col">
+        <p>80% звернень — типові питання про статус, ціни, умови гарантії. Їх обробляли живі оператори цілодобово — дорого і повільно.</p>
+        <p>У неробочий час клієнти чекали відповіді до ранку. Це прямо впливало на задоволеність і повторні покупки.</p>
+      </div>
+      <div class="case-popup-col">
+        <p>AI-бот у Telegram і на сайті закриває типові запити миттєво. Складні кейси передає оператору з повним контекстом розмови.</p>
+        <p>Бот навчений на реальних зверненнях компанії — відповідає точно так, як навчена команда підтримки.</p>
+      </div>
+      <div class="case-popup-col">
+        <p>Задоволеність клієнтів зросла на 18%. Час першої відповіді — 40 секунд замість 12 хвилин у неробочий час.</p>
+        <p>Команда тепер фокусується на складних і прибуткових кейсах, а не на відповідях "де мій товар".</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="case-popup-overlay" id="casePopup2" onclick="closeCaseOutside(event, this)">
+  <div class="case-popup">
+    <button class="case-popup-close" onclick="closeCase(2)">✕</button>
+    <div class="case-popup-header">
+      <div class="case-popup-title">Автоматичні зведення та live-дашборд для керівника</div>
+      <div class="case-popup-num">03</div>
+    </div>
+    <div class="case-popup-grid">
+      <div class="case-popup-label-col">
+        <div class="case-popup-tag">Виробництво · 200 осіб</div>
+        <div class="case-popup-result">
+          <div class="case-popup-result-num">Real‑time</div>
+          <p>дані замість<br>ручних звітів до обіду.</p>
+        </div>
+      </div>
+      <div class="case-popup-col">
+        <p>Операційний директор чекав звіти до обіду — дані збирали вручну з 5 різних систем. Рішення приймались на основі вчорашніх цифр.</p>
+        <p>12 годин на тиждень витрачав аналітик тільки на збір і зведення даних у зручний формат для керівництва.</p>
+      </div>
+      <div class="case-popup-col">
+        <p>Make-сценарій збирає дані щогодини з усіх систем. Дашборд в Looker оновлюється автоматично — без жодної людини в ланцюжку.</p>
+        <p>Налаштували алерти: якщо показник виходить за межі норми — директор отримує сповіщення одразу.</p>
+      </div>
+      <div class="case-popup-col">
+        <p>Перша аномалія виявлена на третій день роботи дашборду — раніше її б помітили через тиждень і втратили гроші.</p>
+        <p>Аналітик переключився на прогнозування і пошук точок зростання замість щоденного копіювання таблиць.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="inner">
+
+    <!-- DESKTOP: pin-scroll cards spread across width -->
+    <div class="svc-pin-height" id="svcPinHeight">
+      <div class="svc-pin-container" id="svcPinContainer">
+
+        <div class="head svc-pin-head">
+          <h2 class="section-h2 svc-split-heading" id="svcHeading" style="text-transform:uppercase">Що ми робимо<br>для вашого бізнесу</h2>
+        </div>
+
+        <div class="svc-pin-cards-row">
+
+        <div class="svc-pin-card">
+          <div class="service-icon">
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="4" width="20" height="20" rx="2" fill="#8B5CF6"/>
+              <rect x="32" y="4" width="20" height="20" rx="2" fill="rgba(139,92,246,.35)"/>
+              <rect x="4" y="32" width="20" height="20" rx="2" fill="rgba(139,92,246,.35)"/>
+              <rect x="32" y="32" width="20" height="20" rx="2" fill="#8B5CF6"/>
+              <path d="M24 14h8M28 10v8" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M24 42h8M28 38v8" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="service-text">
+            <div class="service-name">Автоматизація бізнес-процесів</div>
+            <div class="service-desc">З'єднуємо CRM, склад, бухгалтерію, месенджери — дані рухаються самі, без людини посередині.</div>
+            <div class="service-tools"><span class="tool-tag">Make</span><span class="tool-tag">n8n</span><span class="tool-tag">Zapier</span></div>
+          </div>
+        </div>
+
+        <div class="svc-pin-card">
+          <div class="service-icon">
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="8" width="48" height="40" rx="4" fill="rgba(139,92,246,.15)" stroke="#8B5CF6" stroke-width="2"/>
+              <circle cx="16" cy="22" r="4" fill="#8B5CF6"/>
+              <circle cx="28" cy="22" r="4" fill="rgba(139,92,246,.5)"/>
+              <circle cx="40" cy="22" r="4" fill="rgba(139,92,246,.25)"/>
+              <rect x="10" y="32" width="36" height="4" rx="2" fill="rgba(139,92,246,.3)"/>
+              <rect x="10" y="38" width="22" height="4" rx="2" fill="rgba(139,92,246,.2)"/>
+            </svg>
+          </div>
+          <div class="service-text">
+            <div class="service-name">AI-асистенти і чатботи</div>
+            <div class="service-desc">AI відповідає клієнтам, обробляє заявки та передає складні кейси команді — 24/7 без вихідних.</div>
+            <div class="service-tools"><span class="tool-tag">GPT-4</span><span class="tool-tag">Claude</span><span class="tool-tag">Telegram</span></div>
+          </div>
+        </div>
+
+        <div class="svc-pin-card">
+          <div class="service-icon">
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="4" width="48" height="48" rx="4" fill="rgba(139,92,246,.08)"/>
+              <rect x="8" y="36" width="8" height="12" rx="1" fill="rgba(139,92,246,.4)"/>
+              <rect x="20" y="26" width="8" height="22" rx="1" fill="rgba(139,92,246,.6)"/>
+              <rect x="32" y="18" width="8" height="30" rx="1" fill="#8B5CF6"/>
+              <rect x="44" y="10" width="8" height="38" rx="1" fill="#a78bfa"/>
+              <path d="M8 34l12-10 12-8 12-8" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2 2"/>
+            </svg>
+          </div>
+          <div class="service-text">
+            <div class="service-name">Автоматична звітність і аналітика</div>
+            <div class="service-desc">Дашборд керівника оновлюється в реальному часі — актуальна картина завжди під рукою.</div>
+            <div class="service-tools"><span class="tool-tag">Google Sheets</span><span class="tool-tag">Looker</span><span class="tool-tag">Notion</span></div>
+          </div>
+        </div>
+
+        <div class="svc-pin-card">
+          <div class="service-icon">
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="28" cy="20" r="10" fill="rgba(139,92,246,.2)" stroke="#8B5CF6" stroke-width="2"/>
+              <circle cx="28" cy="20" r="5" fill="#8B5CF6"/>
+              <path d="M10 48c0-9.941 8.059-18 18-18s18 8.059 18 18" stroke="#8B5CF6" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M4 48c0-6 3-11 7-14" stroke="rgba(139,92,246,.4)" stroke-width="2" stroke-linecap="round"/>
+              <path d="M52 48c0-6-3-11-7-14" stroke="rgba(139,92,246,.4)" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="service-text">
+            <div class="service-name">Навчання і підтримка команди</div>
+            <div class="service-desc">Не просто впроваджуємо і йдемо. Навчаємо, залишаємось на зв'язку. Перші 30 днів включено.</div>
+            <div class="service-tools"><span class="tool-tag">Онбординг</span><span class="tool-tag">Документація</span><span class="tool-tag">30 днів</span></div>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="svc-mobile-head">
+      <h2 class="section-h2" style="text-transform:uppercase">Що ми робимо<br>для вашого бізнесу</h2>
+    </div>
+    <div class="svc-mobile-slider">
+      <div class="svc-mobile-track" id="svcMobileTrack">
+        <div class="svc-mobile-slide">
+          <div class="service-icon"><svg width="56" height="56" viewBox="0 0 56 56" fill="none"><rect x="4" y="4" width="20" height="20" rx="2" fill="#8B5CF6"/><rect x="32" y="4" width="20" height="20" rx="2" fill="rgba(139,92,246,.35)"/><rect x="4" y="32" width="20" height="20" rx="2" fill="rgba(139,92,246,.35)"/><rect x="32" y="32" width="20" height="20" rx="2" fill="#8B5CF6"/><path d="M24 14h8M28 10v8" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><path d="M24 42h8M28 38v8" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/></svg></div>
+          <div class="service-text">
+            <div class="service-name">Автоматизація бізнес-процесів</div>
+            <div class="service-desc">З'єднуємо CRM, склад, бухгалтерію, месенджери — дані рухаються самі.</div>
+            <div class="service-tools"><span class="tool-tag">Make</span><span class="tool-tag">n8n</span><span class="tool-tag">Zapier</span></div>
+          </div>
+        </div>
+        <div class="svc-mobile-slide">
+          <div class="service-icon"><svg width="56" height="56" viewBox="0 0 56 56" fill="none"><rect x="4" y="8" width="48" height="40" rx="4" fill="rgba(139,92,246,.15)" stroke="#8B5CF6" stroke-width="2"/><circle cx="16" cy="22" r="4" fill="#8B5CF6"/><circle cx="28" cy="22" r="4" fill="rgba(139,92,246,.5)"/><circle cx="40" cy="22" r="4" fill="rgba(139,92,246,.25)"/><rect x="10" y="32" width="36" height="4" rx="2" fill="rgba(139,92,246,.3)"/><rect x="10" y="38" width="22" height="4" rx="2" fill="rgba(139,92,246,.2)"/></svg></div>
+          <div class="service-text">
+            <div class="service-name">AI-асистенти і чатботи</div>
+            <div class="service-desc">AI відповідає клієнтам і обробляє заявки — 24/7 без вихідних.</div>
+            <div class="service-tools"><span class="tool-tag">GPT-4</span><span class="tool-tag">Claude</span><span class="tool-tag">Telegram</span></div>
+          </div>
+        </div>
+        <div class="svc-mobile-slide">
+          <div class="service-icon"><svg width="56" height="56" viewBox="0 0 56 56" fill="none"><rect x="4" y="4" width="48" height="48" rx="4" fill="rgba(139,92,246,.08)"/><rect x="8" y="36" width="8" height="12" rx="1" fill="rgba(139,92,246,.4)"/><rect x="20" y="26" width="8" height="22" rx="1" fill="rgba(139,92,246,.6)"/><rect x="32" y="18" width="8" height="30" rx="1" fill="#8B5CF6"/><rect x="44" y="10" width="8" height="38" rx="1" fill="#a78bfa"/></svg></div>
+          <div class="service-text">
+            <div class="service-name">Звітність і аналітика</div>
+            <div class="service-desc">Дашборд керівника оновлюється в реальному часі.</div>
+            <div class="service-tools"><span class="tool-tag">Google Sheets</span><span class="tool-tag">Looker</span></div>
+          </div>
+        </div>
+        <div class="svc-mobile-slide">
+          <div class="service-icon"><svg width="56" height="56" viewBox="0 0 56 56" fill="none"><circle cx="28" cy="20" r="10" fill="rgba(139,92,246,.2)" stroke="#8B5CF6" stroke-width="2"/><circle cx="28" cy="20" r="5" fill="#8B5CF6"/><path d="M10 48c0-9.941 8.059-18 18-18s18 8.059 18 18" stroke="#8B5CF6" stroke-width="2.5" stroke-linecap="round"/></svg></div>
+          <div class="service-text">
+            <div class="service-name">Навчання і підтримка</div>
+            <div class="service-desc">Навчаємо, залишаємось на зв'язку. Перші 30 днів включено.</div>
+            <div class="service-tools"><span class="tool-tag">Онбординг</span><span class="tool-tag">30 днів</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="svc-slider-dots">
+        <button class="svc-dot active" data-idx="0" aria-label="Слайд 1"></button>
+        <button class="svc-dot" data-idx="1" aria-label="Слайд 2"></button>
+        <button class="svc-dot" data-idx="2" aria-label="Слайд 3"></button>
+        <button class="svc-dot" data-idx="3" aria-label="Слайд 4"></button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="inner">
+    <div class="process-hero">
+      <div class="process-hero-left">
+        <p class="process-hero-line"><strong>Зрозумій</strong> як працює<br>система зсередини.</p>
+        <p class="process-hero-line" style="margin-left:70px"><strong>Побач</strong> кожен крок<br>від аудиту до запуску.</p>
+      </div>
+      <h2 class="process-heading" id="processHeading">
+        <span class="ph-line"><span class="ph-line-inner">ВІД ПЕРШОГО</span></span>
+        <span class="ph-line"><span class="ph-line-inner">ДЗВІНКА ДО</span></span>
+        <span class="ph-line"><span class="ph-line-inner">РЕЗУЛЬТАТУ</span></span>
+      </h2>
+    </div>
+    <div class="process-body">
+      <aside class="process-sidebar">
+        <p class="process-sidebar-sub">5 кроків — без «чорних скриньок». Ви бачите що відбувається на кожному етапі.</p>
+        <a href="#" class="btn-primary" style="margin-top:24px;display:inline-flex" onclick="event.preventDefault();openCtaModal()">
+          Почати з аудиту
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </aside>
+      <div class="process-rows">
+        <div class="process-row">
+          <div class="process-row-num">001</div>
+          <div class="process-row-name">Безкоштовний аудит — 30 хвилин</div>
+          <div class="process-row-text">Розбираємось у ваших процесах. Де найбільші втрати часу, де найчастіші помилки. Ніяких продажів на цьому дзвінку — тільки аналіз.</div>
+        </div>
+        <div class="process-row">
+          <div class="process-row-num">002</div>
+          <div class="process-row-name">Пропозиція з конкретним планом</div>
+          <div class="process-row-text">Готуємо план автоматизації з описом кожного кроку, термінами і очікуваним результатом. Ви бачите що отримаєте ще до старту.</div>
+        </div>
+        <div class="process-row">
+          <div class="process-row-num">003</div>
+          <div class="process-row-name">Розробка і налаштування</div>
+          <div class="process-row-text">Будуємо сценарії, налаштовуємо інтеграції. Ви бачите прогрес на кожному етапі — без «ми щось робимо, чекайте».</div>
+        </div>
+        <div class="process-row">
+          <div class="process-row-num">004</div>
+          <div class="process-row-name">Тестування і запуск</div>
+          <div class="process-row-text">Тестуємо на реальних даних. Запускаємо поетапно — спочатку один процес, потім розширюємо. Без ризику зупинити роботу.</div>
+        </div>
+        <div class="process-row">
+          <div class="process-row-num">005</div>
+          <div class="process-row-name">Навчання команди і підтримка</div>
+          <div class="process-row-text">Навчаємо ваших людей. Перші 30 днів — на зв'язку 24/7. Після цього — щомісячний супровід за бажанням.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cta">
+  <div id="cta-dots-container"></div>
+  <div class="cta-editorial">
+
+    
+    <div class="cta-top-row">
+      <h2 class="cta-headline-top">Дізнайся,<br>скільки<br>втрачаєш</h2>
+    </div>
+
+    
+    <div class="cta-center-col">
+      <div class="cta-center-line"></div>
+      <p class="cta-top-note">Один дзвінок — і ти побачиш,<br>де бізнес втрачає гроші щодня.</p>
+      <button class="btn-primary" onclick="openCtaModal()">
+        Отримати аудит
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <span class="cta-small-note">Безкоштовно · 30 хв · Без зобов'язань</span>
+      <div class="cta-center-line"></div>
+    </div>
+
+    
+    <div class="cta-bottom-aside">
+      <p class="cta-bottom-aside-text">
+        Середній бізнес · від 10 осіб<br>
+        <strong>Перший результат за 14 днів.</strong><br>
+        Без ризику зупинити процеси.
+      </p>
+    </div>
+
+    
+    <div class="cta-aside-left">
+      <div class="cta-aside-small">
+        <span class="cta-aside-small-label">Підхід</span>
+        <strong>Зупини</strong> рутину.<br>Поверни час команді.
+      </div>
+      <div class="cta-aside-small">
+        Зроби крок,<br>поки конкурент не зробив.
+      </div>
+    </div>
+
+    
+    <div class="cta-bottom-row">
+      <h2 class="cta-headline-bottom">Автоматизуй<br><em>бізнес</em><br>вже зараз</h2>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA MODAL -->
+<div class="cta-modal-overlay" id="ctaModalOverlay" onclick="if(event.target===this)closeCtaModal()">
+  <div class="cta-modal">
+    <button class="cta-modal-close" onclick="closeCtaModal()">✕</button>
+    <div class="cta-modal-title">Записатись на аудит</div>
+    <div class="cta-modal-sub">Заповніть форму — зв'яжемося протягом 2 годин.</div>
+    <form class="cta-form" id="ctaForm" onsubmit="handleCtaSubmit(event)">
+      <div class="cta-row">
+        <input class="cta-input" type="text" id="ctaName" name="name" placeholder="Ваше ім'я" required autocomplete="name">
+        <input class="cta-input" type="text" id="ctaContact" name="contact" placeholder="Телефон або email" required autocomplete="email">
+      </div>
+      <button class="cta-submit" type="submit">
+        Отримати безкоштовний аудит
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9h12M10 5l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </form>
+    <div class="cta-success" id="ctaSuccess" style="display:none;text-align:center;padding:32px 0">
+      <div style="font-size:40px;margin-bottom:12px">✅</div>
+      <div style="font-family:var(--font-head);font-size:20px;font-weight:700;color:#fff;margin-bottom:8px">Заявку отримано!</div>
+      <div style="font-size:14px;color:var(--muted)">Зв'яжемось з вами протягом 2 годин.</div>
+    </div>
+    <p class="cta-note">Безкоштовно · Без зобов'язань · Без спаму</p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="inner">
+    <div class="footer-top">
+      <div class="footer-col">
+        <div class="footer-col-title">Навігація</div>
+        <ul class="footer-links">
+          <li><a href="#pain">Проблема</a></li>
+          <li><a href="#cases">Кейси</a></li>
+          <li><a href="#services">Послуги</a></li>
+          <li><a href="#process">Процес</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Послуги</div>
+        <ul class="footer-links">
+          <li><a href="#services">Автоматизація</a></li>
+          <li><a href="#services">AI-асистенти</a></li>
+          <li><a href="#services">Аналітика</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Контакти</div>
+        <ul class="footer-links">
+          <li><a href="https://t.me/nexora_ai" target="_blank" rel="noopener noreferrer">Telegram</a></li><!-- TODO: замінити на реальний Telegram-канал/бот -->
+          <li><a href="mailto:info@nexora.ai">info@nexora.ai</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Соціальні</div>
+        <ul class="footer-links">
+          <li><a href="https://instagram.com/nexora.ai" target="_blank" rel="noopener noreferrer">Instagram</a></li><!-- TODO: замінити на реальний Instagram -->
+          <li><a href="https://linkedin.com/company/nexora-ai" target="_blank" rel="noopener noreferrer">LinkedIn</a></li><!-- TODO: замінити на реальний LinkedIn -->
+        </ul>
+      </div>
+    </div>
+    <div class="footer-brand">NEXORA</div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 Nexora AI. Автоматизація бізнесу через AI</div>
+      <div class="footer-legal">
+        <a href="#" onclick="openLegal('privacy');return false">Політика конфіденційності</a>
+        <a href="#" onclick="openLegal('terms');return false">Умови використання</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Dither canvas fade — видно на hero + pain, потім ховається
+(function() {
+  const canvas = document.getElementById('dither-canvas');
+  const pain   = document.getElementById('pain-stats-section') || document.getElementById('pain');
+  if (!canvas || !pain) return;
+
+  function updateCanvasOpacity() {
+    const painBottom = pain.offsetTop + pain.offsetHeight;
+    const scrollY    = window.scrollY;
+    const fadeStart  = painBottom - window.innerHeight * 0.3;
+    const fadeEnd    = painBottom + window.innerHeight * 0.2;
+
+    let opacity;
+    if (scrollY < fadeStart) {
+      opacity = 0.75;
+    } else if (scrollY > fadeEnd) {
+      opacity = 0;
+    } else {
+      opacity = 0.75 * (1 - (scrollY - fadeStart) / (fadeEnd - fadeStart));
+    }
+    canvas.style.opacity = opacity;
+  }
+
+  window.addEventListener('scroll', updateCanvasOpacity, { passive: true });
+  updateCanvasOpacity();
+})();
+
+// Nav scroll
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 40);
+});
+
+// Fade up on scroll
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+
+// Cases reveal — рядки заїжджають з країв при скролі до секції
+(function() {
+  const lines = document.querySelectorAll('.cases-line');
+  if (!lines.length) return;
+  const casesObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        // каскад: кожна наступна лінія з невеликою затримкою
+        const idx = Array.prototype.indexOf.call(lines, e.target);
+        setTimeout(() => e.target.classList.add('revealed'), idx * 180);
+        casesObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.25 });
+  lines.forEach(l => casesObs.observe(l));
+})();
+
+// Process reveal — hero-тексти + sidebar + рядки з каскадом
+(function() {
+  // Hero (підзаголовки)
+  const hero = document.querySelector('.process-hero');
+  if (hero) {
+    const heroObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('animated');
+          heroObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.2 });
+    heroObs.observe(hero);
+  }
+
+  // Sidebar (текст + кнопка)
+  const sidebar = document.querySelector('.process-sidebar');
+  if (sidebar) {
+    const sbObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('revealed');
+          sbObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    sbObs.observe(sidebar);
+  }
+
+  // Кроки — каскадом, кожен наступний на 140ms пізніше
+  const rows = document.querySelectorAll('.process-row');
+  if (!rows.length) return;
+  const rowObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const idx = Array.prototype.indexOf.call(rows, e.target);
+        setTimeout(() => e.target.classList.add('revealed'), idx * 100);
+        rowObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.2 });
+  rows.forEach(r => rowObs.observe(r));
+})();
+
+// Mobile menu
+function openMenu() { document.getElementById('mobileMenu').classList.add('open'); document.body.style.overflow='hidden'; }
+function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); document.body.style.overflow=''; }
+
+// Case popups
+function openCase(idx) {
+  document.getElementById('casePopup' + idx).classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeCase(idx) {
+  document.getElementById('casePopup' + idx).classList.remove('open');
+  document.body.style.overflow = '';
+}
+function closeCaseOutside(e, overlay) {
+  if (e.target === overlay) {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+}
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.case-popup-overlay.open').forEach(function(el) {
+      el.classList.remove('open');
+    });
+    document.body.style.overflow = '';
+  }
+});
+
+// Steps accordion
+function toggleStep(step) {
+  const wasActive = step.classList.contains('active');
+  document.querySelectorAll('.step').forEach(s => s.classList.remove('active'));
+  if (!wasActive) step.classList.add('active');
+}
+function toggleProcessRow(row) {
+  const wasActive = row.classList.contains('active');
+  document.querySelectorAll('.process-row').forEach(r => r.classList.remove('active'));
+  if (!wasActive) row.classList.add('active');
+}
+
+// FAQ accordion
+function toggleFaq(q) {
+  const item = q.parentElement;
+  const wasOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+  if (!wasOpen) item.classList.add('open');
+}
+</script>
+
+<!-- Dither Wave Hero Background -->
+<script>
+(function () {
+  const canvas = document.getElementById('dither-canvas');
+  if (!canvas) return;
+
+  /* ── Config (mirrors React Dither props) ── */
+  const CFG = {
+    waveSpeed:     0.04,
+    waveFrequency: 3.0,
+    waveAmplitude: 0.3,
+    waveColor:     [0.38, 0.24, 0.72], /* ~#8B5CF6 purple */
+    colorNum:      4.0,
+    pixelSize:     2.0,
+    mouseRadius:   0.2,
+  };
+
+  /* ── Wave fragment shader (fbm + pattern) ── */
+  const WAVE_VERT = `#version 300 es
+precision highp float;
+in vec2 a_pos;
+void main(){ gl_Position = vec4(a_pos,0.0,1.0); }`;
+
+  const WAVE_FRAG = `#version 300 es
+precision highp float;
+uniform vec2  u_res;
+uniform float u_time;
+uniform float u_waveSpeed;
+uniform float u_waveFreq;
+uniform float u_waveAmp;
+uniform vec3  u_waveColor;
+uniform vec2  u_mouse;
+uniform float u_mouseRadius;
+out vec4 fragColor;
+
+vec4 mod289v(vec4 x){ return x - floor(x*(1./289.))*289.; }
+vec4 permute(vec4 x){ return mod289v(((x*34.)+1.)*x); }
+vec4 taylorInvSqrt(vec4 r){ return 1.79284291400159 - 0.85373472095314*r; }
+vec2 fade(vec2 t){ return t*t*t*(t*(t*6.-15.)+10.); }
+
+float cnoise(vec2 P){
+  vec4 Pi = floor(P.xyxy)+vec4(0,0,1,1);
+  vec4 Pf = fract(P.xyxy)-vec4(0,0,1,1);
+  Pi = mod289v(Pi);
+  vec4 ix=Pi.xzxz, iy=Pi.yyww, fx=Pf.xzxz, fy=Pf.yyww;
+  vec4 i=permute(permute(ix)+iy);
+  vec4 gx=fract(i*(1./41.))*2.-1.;
+  vec4 gy=abs(gx)-.5;
+  vec4 tx=floor(gx+.5); gx-=tx;
+  vec2 g00=vec2(gx.x,gy.x),g10=vec2(gx.y,gy.y),g01=vec2(gx.z,gy.z),g11=vec2(gx.w,gy.w);
+  vec4 norm=taylorInvSqrt(vec4(dot(g00,g00),dot(g01,g01),dot(g10,g10),dot(g11,g11)));
+  g00*=norm.x; g01*=norm.y; g10*=norm.z; g11*=norm.w;
+  float n00=dot(g00,vec2(fx.x,fy.x));
+  float n10=dot(g10,vec2(fx.y,fy.y));
+  float n01=dot(g01,vec2(fx.z,fy.z));
+  float n11=dot(g11,vec2(fx.w,fy.w));
+  vec2 f=fade(Pf.xy);
+  vec2 nx=mix(vec2(n00,n01),vec2(n10,n11),f.x);
+  return 2.3*mix(nx.x,nx.y,f.y);
+}
+
+float fbm(vec2 p){
+  float v=0., amp=1., freq=u_waveFreq;
+  for(int i=0;i<4;i++){ v+=amp*abs(cnoise(p)); p*=freq; amp*=u_waveAmp; }
+  return v;
+}
+
+float pattern(vec2 p){
+  vec2 p2 = p - u_time*u_waveSpeed;
+  return fbm(p + fbm(p2));
+}
+
+void main(){
+  vec2 uv = gl_FragCoord.xy / u_res;
+  uv -= .5;
+  uv.x *= u_res.x/u_res.y;
+  float f = pattern(uv);
+  /* mouse dip */
+  vec2 mn = (u_mouse/u_res - .5)*vec2(1,-1);
+  mn.x *= u_res.x/u_res.y;
+  float dist = length(uv - mn);
+  float fx2 = 1. - smoothstep(0., u_mouseRadius, dist);
+  f -= .5*fx2;
+  vec3 col = mix(vec3(0.), u_waveColor, f);
+  fragColor = vec4(col, 1.0);
+}`;
+
+  /* ── Dither / post-process fragment shader ── */
+  const DITHER_VERT = `#version 300 es
+precision highp float;
+in vec2 a_pos;
+out vec2 v_uv;
+void main(){ v_uv=(a_pos*.5+.5); gl_Position=vec4(a_pos,0,1); }`;
+
+  const DITHER_FRAG = `#version 300 es
+precision highp float;
+uniform sampler2D u_tex;
+uniform vec2  u_res;
+uniform float u_colorNum;
+uniform float u_pixelSize;
+in vec2 v_uv;
+out vec4 fragColor;
+
+const float B[64] = float[64](
+  0./64.,48./64.,12./64.,60./64., 3./64.,51./64.,15./64.,63./64.,
+ 32./64.,16./64.,44./64.,28./64.,35./64.,19./64.,47./64.,31./64.,
+  8./64.,56./64., 4./64.,52./64.,11./64.,59./64., 7./64.,55./64.,
+ 40./64.,24./64.,36./64.,20./64.,43./64.,27./64.,39./64.,23./64.,
+  2./64.,50./64.,14./64.,62./64., 1./64.,49./64.,13./64.,61./64.,
+ 34./64.,18./64.,46./64.,30./64.,33./64.,17./64.,45./64.,29./64.,
+ 10./64.,58./64., 6./64.,54./64., 9./64.,57./64., 5./64.,53./64.,
+ 42./64.,26./64.,38./64.,22./64.,41./64.,25./64.,37./64.,21./64.
+);
+
+vec3 dither(vec2 uv, vec3 color){
+  vec2 sc = floor(uv*u_res/u_pixelSize);
+  int x=int(mod(sc.x,8.)), y=int(mod(sc.y,8.));
+  float thr = B[y*8+x] - .25;
+  float step = 1./(u_colorNum-1.);
+  color += thr*step;
+  color = clamp(color-.2, 0., 1.);
+  return floor(color*(u_colorNum-1.)+.5)/(u_colorNum-1.);
+}
+
+void main(){
+  vec2 ps = u_pixelSize/u_res;
+  vec2 uvp = ps*floor(v_uv/ps);
+  vec3 col = texture(u_tex, uvp).rgb;
+  col = dither(v_uv, col);
+  fragColor = vec4(col, 1.0);
+}`;
+
+  /* ── WebGL helpers ── */
+  function mkShader(gl, type, src) {
+    const s = gl.createShader(type);
+    gl.shaderSource(s, src); gl.compileShader(s);
+    if (!gl.getShaderParameter(s, gl.COMPILE_STATUS))
+      console.error(gl.getShaderInfoLog(s));
+    return s;
+  }
+  function mkProg(gl, vs, fs) {
+    const p = gl.createProgram();
+    gl.attachShader(p, mkShader(gl, gl.VERTEX_SHADER, vs));
+    gl.attachShader(p, mkShader(gl, gl.FRAGMENT_SHADER, fs));
+    gl.linkProgram(p);
+    if (!gl.getProgramParameter(p, gl.LINK_STATUS))
+      console.error(gl.getProgramInfoLog(p));
+    return p;
+  }
+  function mkQuad(gl, prog) {
+    const buf = gl.createBuffer();
+    gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+    gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1,-1,1, 1,1]), gl.STATIC_DRAW);
+    const loc = gl.getAttribLocation(prog, 'a_pos');
+    gl.enableVertexAttribArray(loc);
+    gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
+  }
+
+  /* ── Init ── */
+  const gl = canvas.getContext('webgl2', { antialias: false, alpha: true });
+  if (!gl) return;
+
+  /* wave pass */
+  const waveProg   = mkProg(gl, WAVE_VERT, WAVE_FRAG);
+  /* dither pass */
+  const ditherProg = mkProg(gl, DITHER_VERT, DITHER_FRAG);
+
+  /* wave uniforms */
+  const wU = {
+    res:     gl.getUniformLocation(waveProg, 'u_res'),
+    time:    gl.getUniformLocation(waveProg, 'u_time'),
+    speed:   gl.getUniformLocation(waveProg, 'u_waveSpeed'),
+    freq:    gl.getUniformLocation(waveProg, 'u_waveFreq'),
+    amp:     gl.getUniformLocation(waveProg, 'u_waveAmp'),
+    color:   gl.getUniformLocation(waveProg, 'u_waveColor'),
+    mouse:   gl.getUniformLocation(waveProg, 'u_mouse'),
+    mRadius: gl.getUniformLocation(waveProg, 'u_mouseRadius'),
+  };
+  /* dither uniforms */
+  const dU = {
+    tex:      gl.getUniformLocation(ditherProg, 'u_tex'),
+    res:      gl.getUniformLocation(ditherProg, 'u_res'),
+    colorNum: gl.getUniformLocation(ditherProg, 'u_colorNum'),
+    pixelSz:  gl.getUniformLocation(ditherProg, 'u_pixelSize'),
+  };
+
+  /* FBO for wave pass → texture */
+  let fbo, fboTex, fboW = 0, fboH = 0;
+  function buildFBO(w, h) {
+    if (fboTex) gl.deleteTexture(fboTex);
+    if (fbo)    gl.deleteFramebuffer(fbo);
+    fboTex = gl.createTexture();
+    gl.bindTexture(gl.TEXTURE_2D, fboTex);
+    gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA8, w, h, 0, gl.RGBA, gl.UNSIGNED_BYTE, null);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+    fbo = gl.createFramebuffer();
+    gl.bindFramebuffer(gl.FRAMEBUFFER, fbo);
+    gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, gl.TEXTURE_2D, fboTex, 0);
+    gl.bindFramebuffer(gl.FRAMEBUFFER, null);
+    fboW = w; fboH = h;
+  }
+
+  /* Quad VAO for wave pass */
+  const waveVAO = gl.createVertexArray();
+  gl.bindVertexArray(waveVAO);
+  mkQuad(gl, waveProg);
+  gl.bindVertexArray(null);
+
+  /* Quad VAO for dither pass */
+  const ditherVAO = gl.createVertexArray();
+  gl.bindVertexArray(ditherVAO);
+  mkQuad(gl, ditherProg);
+  gl.bindVertexArray(null);
+
+  /* Resize */
+  function resize() {
+    const w = window.innerWidth, h = window.innerHeight;
+    canvas.width = w; canvas.height = h;
+    if (w !== fboW || h !== fboH) buildFBO(w, h);
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  /* Mouse — слухаємо весь document щоб пляма йшла і на pain секцію */
+  const mouse = { x: -9999, y: -9999 };
+  document.addEventListener('mousemove', e => {
+    const r = canvas.getBoundingClientRect();
+    mouse.x = e.clientX - r.left;
+    mouse.y = e.clientY - r.top;
+  });
+  document.addEventListener('mouseleave', () => { mouse.x = -9999; mouse.y = -9999; });
+
+  /* Render loop */
+  let start = null;
+  function frame(ts) {
+    if (!start) start = ts;
+    const t = (ts - start) * 0.001;
+    const w = canvas.width, h = canvas.height;
+
+    /* ── Pass 1: wave → FBO ── */
+    gl.bindFramebuffer(gl.FRAMEBUFFER, fbo);
+    gl.viewport(0, 0, w, h);
+    gl.useProgram(waveProg);
+    gl.bindVertexArray(waveVAO);
+    gl.uniform2f(wU.res, w, h);
+    gl.uniform1f(wU.time, t);
+    gl.uniform1f(wU.speed, CFG.waveSpeed);
+    gl.uniform1f(wU.freq, CFG.waveFrequency);
+    gl.uniform1f(wU.amp, CFG.waveAmplitude);
+    gl.uniform3f(wU.color, ...CFG.waveColor);
+    gl.uniform2f(wU.mouse, mouse.x, mouse.y);
+    gl.uniform1f(wU.mRadius, CFG.mouseRadius);
+    gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+    gl.bindVertexArray(null);
+    gl.bindFramebuffer(gl.FRAMEBUFFER, null);
+
+    /* ── Pass 2: dither → screen ── */
+    gl.viewport(0, 0, w, h);
+    gl.useProgram(ditherProg);
+    gl.bindVertexArray(ditherVAO);
+    gl.activeTexture(gl.TEXTURE0);
+    gl.bindTexture(gl.TEXTURE_2D, fboTex);
+    gl.uniform1i(dU.tex, 0);
+    gl.uniform2f(dU.res, w, h);
+    gl.uniform1f(dU.colorNum, CFG.colorNum);
+    gl.uniform1f(dU.pixelSz, CFG.pixelSize);
+    gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+    gl.bindVertexArray(null);
+
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+})();
+</script>
+
+<script>
+(function() {
+  function init() {
+    var container = document.getElementById('cta-dots-container');
+    if (!container) return;
+
+    // Load Three.js then run
+    if (window.THREE) { run(container); return; }
+    var s = document.createElement('script');
+    s.src = 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js';
+    s.onload = function() { run(container); };
+    document.head.appendChild(s);
+  }
+
+  function run(container) {
+    var THREE = window.THREE;
+    var SEPARATION = 120, AMOUNTX = 50, AMOUNTY = 35;
+
+    var scene = new THREE.Scene();
+    var w = container.offsetWidth || window.innerWidth;
+    var h = container.offsetHeight || window.innerHeight;
+
+    var camera = new THREE.PerspectiveCamera(60, w / h, 1, 10000);
+    camera.position.set(0, 280, 1100);
+
+    var renderer = new THREE.WebGLRenderer({ alpha: true, antialias: false });
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5));
+    renderer.setSize(w, h);
+    renderer.setClearColor(0x000000, 0);
+    container.appendChild(renderer.domElement);
+
+    // Build geometry
+    var positions = [];
+    for (var ix = 0; ix < AMOUNTX; ix++) {
+      for (var iy = 0; iy < AMOUNTY; iy++) {
+        positions.push(
+          ix * SEPARATION - (AMOUNTX * SEPARATION) / 2,
+          0,
+          iy * SEPARATION - (AMOUNTY * SEPARATION) / 2
+        );
+      }
+    }
+
+    var geometry = new THREE.BufferGeometry();
+    geometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
+
+    // Round dot texture
+    var dotCanvas = document.createElement('canvas');
+    dotCanvas.width = 32; dotCanvas.height = 32;
+    var ctx = dotCanvas.getContext('2d');
+    var grad = ctx.createRadialGradient(16,16,0,16,16,16);
+    grad.addColorStop(0,   'rgba(139,92,246,1)');
+    grad.addColorStop(0.4, 'rgba(139,92,246,0.8)');
+    grad.addColorStop(1,   'rgba(139,92,246,0)');
+    ctx.fillStyle = grad;
+    ctx.beginPath(); ctx.arc(16,16,16,0,Math.PI*2); ctx.fill();
+    var dotTex = new THREE.CanvasTexture(dotCanvas);
+
+    var material = new THREE.PointsMaterial({
+      size: 10,
+      map: dotTex,
+      color: 0xffffff,
+      transparent: true,
+      opacity: 0.45,
+      sizeAttenuation: true,
+      depthWrite: false,
+      alphaTest: 0.01,
+    });
+
+    var points = new THREE.Points(geometry, material);
+    scene.add(points);
+
+    // Visibility pause
+    var visible = false;
+    var obs = new IntersectionObserver(function(entries) {
+      visible = entries[0].isIntersecting;
+    }, { threshold: 0.01 });
+    obs.observe(container);
+
+    // Resize
+    function resize() {
+      var nw = container.offsetWidth || window.innerWidth;
+      var nh = container.offsetHeight || window.innerHeight;
+      camera.aspect = nw / nh;
+      camera.updateProjectionMatrix();
+      renderer.setSize(nw, nh);
+    }
+    window.addEventListener('resize', resize);
+
+    var count = 0;
+    function animate() {
+      requestAnimationFrame(animate);
+      if (!visible) return;
+
+      var posAttr = geometry.attributes.position;
+      var pos = posAttr.array;
+      var i = 0;
+      for (var ix = 0; ix < AMOUNTX; ix++) {
+        for (var iy = 0; iy < AMOUNTY; iy++) {
+          pos[i * 3 + 1] =
+            Math.sin((ix + count) * 0.3) * 45 +
+            Math.sin((iy + count) * 0.5) * 45;
+          i++;
+        }
+      }
+      posAttr.needsUpdate = true;
+      renderer.render(scene, camera);
+      count += 0.025;
+    }
+    animate();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+
+<script>
+function openCtaModal() {
+  document.getElementById('ctaModalOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+  // Reset form state on open
+  var form = document.getElementById('ctaForm');
+  var success = document.getElementById('ctaSuccess');
+  if (form) form.style.display = '';
+  if (success) success.style.display = 'none';
+}
+function closeCtaModal() {
+  document.getElementById('ctaModalOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeCtaModal();
+});
+// TODO: підключи реальний endpoint (Formspree, EmailJS або власний API)
+// Замість заглушки нижче — вставити fetch() до свого сервісу
+function handleCtaSubmit(e) {
+  e.preventDefault();
+  var name    = document.getElementById('ctaName').value.trim();
+  var contact = document.getElementById('ctaContact').value.trim();
+  if (!name || !contact) return;
+
+  // ── Заглушка: показуємо success відразу ──
+  // Коли підключиш реальний endpoint — замінити блок нижче на fetch()
+  document.getElementById('ctaForm').style.display = 'none';
+  document.getElementById('ctaSuccess').style.display = 'block';
+
+  /* Приклад з Formspree:
+  fetch('https://formspree.io/f/YOUR_FORM_ID', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify({ name: name, contact: contact })
+  }).then(function(r) {
+    if (r.ok) {
+      document.getElementById('ctaForm').style.display = 'none';
+      document.getElementById('ctaSuccess').style.display = 'block';
+    }
+  });
+  */
+}
+</script>
+<!-- Pain section typewriter -->
+<script>
+(function() {
+  const LINES = [
+    { id: 'pl-0', text: 'Дані губляться між інструментами.' },
+    { id: 'pl-1', text: 'Звіти з\'являються із запізненням.' },
+    { id: 'pl-2', text: 'Клієнти йдуть до тих, хто реагує швидше.' },
+    { id: 'pl-3', text: 'Автоматизація потрібна, але здається складною.' },
+    { id: 'pl-4', text: 'Проблема не в людях. ', accent: 'Проблема в системі.' },
+  ];
+
+  const TYPING_SPEED = 14;   // мс на символ
+  const LINE_PAUSE   = 120;  // пауза між рядками
+  const LOOP_PAUSE   = 3000; // пауза після останнього рядка перед скиданням
+  const RESET_SPEED  = 10;   // швидкість видалення при скиданні
+
+  // Створюємо cursor елемент
+  const cursor = document.createElement('span');
+  cursor.className = 'pain-cursor';
+
+  let lineIdx  = 0;
+  let charIdx  = 0;
+  let timeout  = null;
+  let started  = false;
+
+  function getEl(id) { return document.getElementById(id); }
+
+  function setLineContent(line, typed) {
+    const el = getEl(line.id);
+    if (!el) return;
+    el.innerHTML = '';
+    if (line.accent) {
+      // перша частина — біла, друга — акцент
+      const typedMain  = typed.slice(0, line.text.length);
+      const typedExtra = typed.slice(line.text.length);
+      el.appendChild(document.createTextNode(typedMain));
+      if (typedExtra) {
+        const acc = document.createElement('span');
+        acc.style.color = 'var(--accent)';
+        acc.textContent = typedExtra;
+        el.appendChild(acc);
+      }
+    } else {
+      el.textContent = typed;
+    }
+  }
+
+  function moveCursorTo(lineId) {
+    const el = getEl(lineId);
+    if (el) el.appendChild(cursor);
+  }
+
+  function typeChar() {
+    const line     = LINES[lineIdx];
+    const fullText = line.accent ? line.text + line.accent : line.text;
+
+    if (charIdx <= fullText.length) {
+      setLineContent(line, fullText.slice(0, charIdx));
+      moveCursorTo(line.id);
+      charIdx++;
+      timeout = setTimeout(typeChar, TYPING_SPEED + (Math.random() * 20 - 10));
+    } else {
+      // рядок надруковано — переходимо до наступного
+      charIdx = 0;
+      lineIdx++;
+
+      if (lineIdx < LINES.length) {
+        timeout = setTimeout(typeNextLine, LINE_PAUSE);
+      } else {
+        // всі рядки надруковано — чекаємо і скидаємо
+        // Всі рядки надруковано — зупиняємось, курсор ховаємо
+        cursor.classList.add('hidden');
+      }
+    }
+  }
+
+  function typeNextLine() {
+    moveCursorTo(LINES[lineIdx].id);
+    typeChar();
+  }
+
+  function resetAll() {
+    // Швидко видаляємо всі рядки знизу вгору
+    let resetLine = LINES.length - 1;
+
+    function clearLine() {
+      if (resetLine < 0) {
+        // Все очищено — починаємо знову
+        lineIdx = 0;
+        charIdx = 0;
+        timeout = setTimeout(typeNextLine, LINE_PAUSE);
+        return;
+      }
+      const el = getEl(LINES[resetLine].id);
+      if (!el) { resetLine--; clearLine(); return; }
+
+      const text = el.textContent;
+      if (text.length > 0) {
+        el.textContent = text.slice(0, -1);
+        timeout = setTimeout(clearLine, RESET_SPEED);
+      } else {
+        resetLine--;
+        timeout = setTimeout(clearLine, LINE_PAUSE / 2);
+      }
+    }
+    clearLine();
+  }
+
+  function startWhenVisible() {
+    if (started) return;
+    const section = document.getElementById('pain');
+    if (!section) return;
+
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting && !started) {
+          started = true;
+          obs.disconnect();
+          timeout = setTimeout(typeNextLine, 400);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    obs.observe(section);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', startWhenVisible);
+  } else {
+    startWhenVisible();
+  }
+})();
+</script>
+<!-- Hero intro animation -->
+<script>
+(function() {
+  function runHeroIntro() {
+    var gsap = window.gsap;
+    if (!gsap) return;
+
+    // Знімаємо visibility: hidden — тепер можна показувати
+    document.body.classList.add('ready');
+
+    // keywords (3 елементи)
+    gsap.fromTo('.hero-keywords span',
+      { opacity: 0, y: 18 },
+      { opacity: 1, y: 0, stagger: 0.12, duration: 0.9, ease: 'power3.out', delay: 0.2 }
+    );
+
+    // великий заголовок — лінії виїжджають знизу
+    var h1 = document.querySelector('.hero-h1');
+    if (h1) {
+      var html = h1.innerHTML;
+      var lines = html.split('<br>');
+      h1.innerHTML = lines.map(function(l) {
+        return '<span class="hero-h1-line-wrap" style="display:block;overflow:hidden"><span class="hero-h1-line" style="display:block">' + l + '</span></span>';
+      }).join('');
+      h1.style.opacity = '1';
+
+      gsap.fromTo('.hero-h1-line',
+        { y: '110%' },
+        { y: '0%', stagger: 0.1, duration: 1.0, ease: 'power4.out', delay: 0.45 }
+      );
+    }
+
+    // підпис
+    gsap.fromTo('.hero-sub',
+      { opacity: 0, y: 20 },
+      { opacity: 1, y: 0, duration: 0.85, ease: 'power3.out', delay: 0.85 }
+    );
+
+    // кнопка
+    gsap.fromTo('.hero-actions',
+      { opacity: 0, y: 16 },
+      { opacity: 1, y: 0, duration: 0.75, ease: 'power3.out', delay: 1.05 }
+    );
+
+    // hero-note
+    gsap.fromTo('.hero-note',
+      { opacity: 0 },
+      { opacity: 1, duration: 0.6, ease: 'power2.out', delay: 1.25 }
+    );
+
+    // scroll indicator
+    gsap.fromTo('.hero-scroll',
+      { opacity: 0 },
+      { opacity: 0.4, duration: 0.6, ease: 'power2.out', delay: 1.55 }
+    );
+  }
+
+  function loadGsapAndRun() {
+    if (window.gsap) { runHeroIntro(); return; }
+    var s = document.createElement('script');
+    s.src = 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js';
+    s.onload = runHeroIntro;
+    s.onerror = function() { document.body.classList.add('ready'); };
+    document.head.appendChild(s);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadGsapAndRun);
+  } else {
+    loadGsapAndRun();
+  }
+})();
+</script>
+<!-- Scramble animation for stats -->
+<script>
+(function(){
+  const CHARS = '0123456789!@#$%&×−+';
+  const DURATION = 1200; // мс
+  const STEPS = 18;
+
+  function scramble(el) {
+    const target   = el.dataset.scramble;
+    const suffix   = el.dataset.scrambleSuffix || '';
+    const interval = DURATION / STEPS;
+    let step = 0;
+
+    const tick = setInterval(() => {
+      step++;
+      const progress = step / STEPS;
+
+      // Скільки символів вже "відкрито" (зліва направо)
+      const revealed = Math.floor(progress * target.length);
+
+      let display = '';
+      for (let i = 0; i < target.length; i++) {
+        if (i < revealed) {
+          display += target[i];
+        } else {
+          // Рандомний символ для ще не відкритих
+          const ch = target[i];
+          if (ch === ' ' || ch === '.' || ch === ',') {
+            display += ch;
+          } else {
+            display += CHARS[Math.floor(Math.random() * CHARS.length)];
+          }
+        }
+      }
+
+      if (suffix) {
+        el.innerHTML = display + '<span>' + suffix + '</span>';
+      } else {
+        el.textContent = display;
+      }
+
+      if (step >= STEPS) {
+        clearInterval(tick);
+        // Фінальне значення
+        if (suffix) {
+          el.innerHTML = target + '<span>' + suffix + '</span>';
+        } else {
+          el.textContent = target;
+        }
+      }
+    }, interval);
+  }
+
+  function init() {
+    const els = document.querySelectorAll('[data-scramble]');
+    if (!els.length) return;
+
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          obs.unobserve(e.target);
+          // Невелика затримка між цифрами для каскадного ефекту
+          const idx = Array.from(els).indexOf(e.target);
+          setTimeout(() => scramble(e.target), idx * 150);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    els.forEach(el => obs.observe(el));
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+<!-- Services pin-scroll animation -->
+<script>
+(function() {
+
+  // ── MOBILE CAROUSEL ──────────────────────────────────────
+  if (window.innerWidth <= 700) {
+    var track = document.getElementById('svcMobileTrack');
+    var dots  = document.querySelectorAll('.svc-dot');
+    if (!track || !dots.length) return;
+    var slides = track.querySelectorAll('.svc-mobile-slide');
+
+    dots.forEach(function(dot) {
+      dot.addEventListener('click', function() {
+        var idx = +dot.dataset.idx;
+        slides[idx].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+      });
+    });
+    track.addEventListener('scroll', function() {
+      var slideW = slides[0].offsetWidth + 12;
+      var idx = Math.round(track.scrollLeft / slideW);
+      dots.forEach(function(d, i) { d.classList.toggle('active', i === idx); });
+    }, { passive: true });
+    return;
+  }
+
+  // ── DESKTOP PIN-SCROLL ──────────────────────────────────
+  function runAnim() {
+    var gsap = window.gsap;
+    var ScrollTrigger = window.ScrollTrigger;
+    if (!gsap || !ScrollTrigger) return;
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    var pinHeight = document.getElementById('svcPinHeight');
+    var container = document.getElementById('svcPinContainer');
+    if (!pinHeight || !container) return;
+
+    var cards = gsap.utils.toArray('.svc-pin-card');
+    if (!cards.length) return;
+
+    var heading = container.querySelector('.svc-pin-head');
+    var h2 = document.getElementById('svcHeading');
+
+    // Split heading into individual letter spans with overflow-hidden wrappers
+    if (h2 && !h2.dataset.split) {
+      h2.dataset.split = '1';
+      var html = h2.innerHTML;
+      var newHtml = '';
+      var parts = html.split('<br>');
+      parts.forEach(function(part, pi) {
+        for (var i = 0; i < part.length; i++) {
+          if (part[i] === ' ') {
+            newHtml += '<span class="svc-letter-space"></span>';
+          } else {
+            newHtml += '<span class="svc-letter-wrap"><span class="svc-letter">' + part[i] + '</span></span>';
+          }
+        }
+        if (pi < parts.length - 1) newHtml += '<br>';
+      });
+      h2.innerHTML = newHtml;
+    }
+
+    var letters = gsap.utils.toArray('.svc-letter');
+
+    var tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: pinHeight,
+        start: 'top top',
+        end: 'bottom bottom',
+        scrub: 1.5,
+        pin: container,
+      }
+    });
+
+    // 0. Vertical cut reveal — літери виїжджають знизу з-під clip-маски
+    tl.to(letters, {
+      y: '0%',
+      stagger: 0.03,
+      duration: 0.6,
+      ease: 'power3.out'
+    });
+
+    // 1. Поява карток (знизу в центр, кожна на своє місце)
+    tl.to(cards, {
+      y: 0,
+      rotation: 0,
+      stagger: 0.15,
+      duration: 1,
+      ease: 'power2.out'
+    }, 0.4);
+
+    // 2. Виліт карток (з центру вгору)
+    tl.to(cards, {
+      y: '-100vh',
+      rotation: -12,
+      stagger: 0.15,
+      duration: 1,
+      ease: 'back.in(1.2)',
+    }, 1.2);
+
+    // 3. Заголовок вилітає разом з картками
+    tl.to(heading, {
+      y: '-100vh',
+      duration: 1,
+      ease: 'power2.in',
+    }, 1.2);
+  }
+
+  // Завантажуємо GSAP з CDN
+  function loadScript(src, cb) {
+    var s = document.createElement('script');
+    s.src = src;
+    s.onload = cb;
+    s.onerror = function() {
+      // Fallback: показуємо картки статично
+      document.querySelectorAll('.svc-pin-card').forEach(function(c) {
+        c.style.transform = 'none';
+      });
+      var ph = document.getElementById('svcPinHeight');
+      if (ph) ph.style.height = 'auto';
+      var ct = document.getElementById('svcPinContainer');
+      if (ct) { ct.style.height = 'auto'; ct.style.padding = '80px var(--gutter)'; }
+    };
+    document.head.appendChild(s);
+  }
+
+  if (window.gsap && window.ScrollTrigger) {
+    runAnim();
+  } else {
+    loadScript('https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js', function() {
+      loadScript('https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js', function() {
+        runAnim();
+      });
+    });
+  }
+
+})();
+</script>
+<script>
+// Process heading + hero-lines slide-up animation
+(function() {
+  const heading = document.getElementById('processHeading');
+  const heroBlock = heading ? heading.closest('.process-hero') : null;
+
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        // заголовок
+        heading.classList.add('animated');
+        // два рядки зліва
+        if (heroBlock) heroBlock.classList.add('animated');
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.25 });
+
+  if (heading) obs.observe(heading);
+})();
+</script>
+
+<script>
+(function() {
+  function splitHeadlineLines(el) {
+    if (!el || el.dataset.ctaSplit) return;
+    el.dataset.ctaSplit = '1';
+    var parts = el.innerHTML.split('<br>');
+    el.innerHTML = parts.map(function(p) {
+      return '<span class="cta-ph-wrap"><span class="cta-ph-inner">' + p + '</span></span>';
+    }).join('');
+  }
+
+  function init() {
+    var section = document.getElementById('cta');
+    if (!section) return;
+
+    // Розбиваємо заголовки на рядки
+    splitHeadlineLines(section.querySelector('.cta-headline-top'));
+    splitHeadlineLines(section.querySelector('.cta-headline-bottom'));
+
+    var obs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) {
+          section.classList.add('revealed');
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.4 });
+
+    obs.observe(section);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+<!-- LEGAL MODALS -->
+<style>
+.legal-overlay {
+position: fixed; inset: 0; z-index: 400;
+background: rgba(0,0,0,.82);
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+opacity: 0; visibility: hidden;
+transition: opacity .35s, visibility .35s;
+display: flex; align-items: center; justify-content: center;
+padding: 24px;
+}
+.legal-overlay.open { opacity: 1; visibility: visible; }
+.legal-modal {
+background: #0f0f0f;
+border: 1px solid rgba(255,255,255,.1);
+border-radius: 16px;
+width: 100%; max-width: 680px;
+max-height: 82vh;
+display: flex; flex-direction: column;
+transform: translateY(24px) scale(.98);
+transition: transform .4s cubic-bezier(.16,1,.3,1);
+overflow: hidden;
+}
+.legal-overlay.open .legal-modal { transform: translateY(0) scale(1); }
+.legal-modal-header {
+display: flex; align-items: center; justify-content: space-between;
+padding: 28px 32px 20px;
+border-bottom: 1px solid rgba(255,255,255,.07);
+flex-shrink: 0;
+}
+.legal-modal-title {
+font-family: var(--font-head); font-size: 20px; font-weight: 700;
+color: var(--white); letter-spacing: -.02em;
+}
+.legal-modal-close {
+width: 34px; height: 34px; border-radius: 50%;
+background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1);
+cursor: pointer; display: flex; align-items: center; justify-content: center;
+color: var(--muted); font-size: 16px; flex-shrink: 0;
+transition: background .2s, color .2s;
+}
+.legal-modal-close:hover { background: rgba(255,255,255,.12); color: var(--white); }
+.legal-modal-body {
+overflow-y: auto; padding: 28px 32px 36px;
+scrollbar-width: thin; scrollbar-color: rgba(139,92,246,.3) transparent;
+}
+.legal-modal-body::-webkit-scrollbar { width: 4px; }
+.legal-modal-body::-webkit-scrollbar-track { background: transparent; }
+.legal-modal-body::-webkit-scrollbar-thumb { background: rgba(139,92,246,.35); border-radius: 4px; }
+.legal-modal-body h2 {
+font-family: var(--font-head); font-size: 15px; font-weight: 700;
+color: var(--white); letter-spacing: -.01em;
+margin: 28px 0 10px; text-transform: uppercase; letter-spacing: .06em;
+}
+.legal-modal-body h2:first-child { margin-top: 0; }
+.legal-modal-body p {
+font-size: 14px; color: rgba(255,255,255,.55); line-height: 1.75;
+font-weight: 300; margin: 0 0 12px;
+}
+.legal-modal-body ul {
+padding-left: 20px; margin: 0 0 12px;
+}
+.legal-modal-body ul li {
+font-size: 14px; color: rgba(255,255,255,.55); line-height: 1.75;
+font-weight: 300; margin-bottom: 6px;
+}
+.legal-modal-date {
+font-size: 12px; color: rgba(255,255,255,.25);
+margin-top: 32px; padding-top: 20px;
+border-top: 1px solid rgba(255,255,255,.06);
+}
+</style>
+
+<!-- Privacy Policy Modal -->
+<div class="legal-overlay" id="privacyModal" onclick="if(event.target===this)closeLegal('privacy')">
+  <div class="legal-modal">
+    <div class="legal-modal-header">
+      <div class="legal-modal-title">Політика конфіденційності</div>
+      <button class="legal-modal-close" onclick="closeLegal('privacy')">✕</button>
+    </div>
+    <div class="legal-modal-body">
+      <h2>1. Загальні положення</h2>
+      <p>Nexora AI («ми», «нас», «наш») поважає вашу конфіденційність і зобов'язується захищати персональні дані, які ви надаєте при використанні нашого сайту та послуг.</p>
+      <p>Ця Політика конфіденційності пояснює, які дані ми збираємо, як ми їх використовуємо та які права ви маєте щодо своїх даних.</p>
+
+      <h2>2. Які дані ми збираємо</h2>
+      <p>При заповненні форми аудиту ми збираємо:</p>
+      <ul>
+        <li>Ім'я та прізвище</li>
+        <li>Номер телефону або email-адресу</li>
+        <li>Інформацію про ваш бізнес, яку ви надаєте добровільно під час консультації</li>
+      </ul>
+      <p>Також автоматично збирається технічна інформація: IP-адреса, тип браузера, сторінки, які ви переглядали, та час перебування на сайті.</p>
+
+      <h2>3. Мета збору даних</h2>
+      <p>Ваші дані використовуються виключно для:</p>
+      <ul>
+        <li>Зв'язку з вами для проведення безкоштовного аудиту</li>
+        <li>Надання інформації про наші послуги</li>
+        <li>Покращення якості сайту та користувацького досвіду</li>
+      </ul>
+      <p>Ми не продаємо, не передаємо і не розкриваємо ваші персональні дані третім особам без вашої явної згоди, за винятком випадків, передбачених законодавством України.</p>
+
+      <h2>4. Зберігання даних</h2>
+      <p>Ваші дані зберігаються на захищених серверах і не довше, ніж це необхідно для виконання цілей, зазначених у цій Політиці, або вимог законодавства.</p>
+
+      <h2>5. Файли cookie</h2>
+      <p>Сайт використовує cookie-файли для коректної роботи та аналітики. Ви можете вимкнути cookie у налаштуваннях браузера, однак це може вплинути на функціональність сайту.</p>
+
+      <h2>6. Ваші права</h2>
+      <p>Ви маєте право:</p>
+      <ul>
+        <li>Запитати доступ до своїх персональних даних</li>
+        <li>Вимагати виправлення або видалення даних</li>
+        <li>Відкликати згоду на обробку даних у будь-який момент</li>
+      </ul>
+      <p>Для реалізації своїх прав або з будь-якими питаннями звертайтесь: <strong style="color:rgba(255,255,255,.8)">hello@nexora.ai</strong></p>
+
+      <h2>7. Зміни до Політики</h2>
+      <p>Ми залишаємо за собою право оновлювати цю Політику. Актуальна версія завжди доступна на цій сторінці.</p>
+
+      <div class="legal-modal-date">Останнє оновлення: 16 квітня 2026 р.</div>
+    </div>
+  </div>
+</div>
+
+<!-- Terms of Use Modal -->
+<div class="legal-overlay" id="termsModal" onclick="if(event.target===this)closeLegal('terms')">
+  <div class="legal-modal">
+    <div class="legal-modal-header">
+      <div class="legal-modal-title">Умови використання</div>
+      <button class="legal-modal-close" onclick="closeLegal('terms')">✕</button>
+    </div>
+    <div class="legal-modal-body">
+      <h2>1. Прийняття умов</h2>
+      <p>Використовуючи сайт nexora.ai, ви погоджуєтесь із цими Умовами використання. Якщо ви не погоджуєтесь — будь ласка, не використовуйте сайт.</p>
+
+      <h2>2. Опис послуг</h2>
+      <p>Nexora AI надає послуги з автоматизації бізнес-процесів, впровадження AI-рішень та консультування з питань цифрової трансформації середнього бізнесу.</p>
+      <p>Безкоштовний аудит — це попередня консультація тривалістю до 30 хвилин, яка не накладає на жодну зі сторін жодних зобов'язань.</p>
+
+      <h2>3. Інтелектуальна власність</h2>
+      <p>Весь контент на сайті — тексти, зображення, логотип, дизайн — є власністю Nexora AI і захищений законодавством про авторське право. Використання матеріалів без письмового дозволу заборонено.</p>
+
+      <h2>4. Обмеження відповідальності</h2>
+      <p>Сайт надається «як є». Ми не гарантуємо безперебійну роботу і не несемо відповідальності за:</p>
+      <ul>
+        <li>Технічні перебої або недоступність сайту</li>
+        <li>Збитки, що виникли внаслідок використання або неможливості використання сайту</li>
+        <li>Дії третіх осіб</li>
+      </ul>
+
+      <h2>5. Заборонені дії</h2>
+      <p>При використанні сайту забороняється:</p>
+      <ul>
+        <li>Розміщувати або передавати шкідливе програмне забезпечення</li>
+        <li>Здійснювати дії, що порушують роботу сайту або серверів</li>
+        <li>Збирати дані інших користувачів без їхньої згоди</li>
+        <li>Використовувати сайт у незаконних цілях</li>
+      </ul>
+
+      <h2>6. Посилання на сторонні ресурси</h2>
+      <p>Сайт може містити посилання на зовнішні ресурси. Ми не несемо відповідальності за зміст або політику конфіденційності таких ресурсів.</p>
+
+      <h2>7. Застосовне право</h2>
+      <p>Ці Умови регулюються законодавством України. Усі спори вирішуються в судовому порядку за місцезнаходженням компанії.</p>
+
+      <h2>8. Зміни до Умов</h2>
+      <p>Ми можемо змінювати ці Умови в будь-який час. Продовження використання сайту після внесення змін означає прийняття нових Умов.</p>
+      <p>З питаннями звертайтесь: <strong style="color:rgba(255,255,255,.8)">hello@nexora.ai</strong></p>
+
+      <div class="legal-modal-date">Останнє оновлення: 16 квітня 2026 р.</div>
+    </div>
+  </div>
+</div>
+
+<script>
+function openLegal(type) {
+  var id = type === 'privacy' ? 'privacyModal' : 'termsModal';
+  document.getElementById(id).classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeLegal(type) {
+  var id = type === 'privacy' ? 'privacyModal' : 'termsModal';
+  document.getElementById(id).classList.remove('open');
+  // restore scroll only if cta modal also closed
+  if (!document.getElementById('ctaModalOverlay').classList.contains('open')) {
+    document.body.style.overflow = '';
+  }
+}
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    closeLegal('privacy');
+    closeLegal('terms');
+  }
+});
+</script>
+</body>
+</html>
